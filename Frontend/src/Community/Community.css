@@ -1,0 +1,21 @@
+.Community{
+    padding: 1rem;
+    scroll-snap-align: center;
+}
+.Community h4, .Community h5{
+    padding-left: 3rem;
+}
+.community-wrapper {
+    padding-left: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.community-left{
+    flex: 1; /*Change this after*/
+    border: 1px solid black;
+}
+.community-right{
+    flex: 1; /*Change this after*/
+    border: 1px solid brown;
+}
