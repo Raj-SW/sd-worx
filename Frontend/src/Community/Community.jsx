@@ -10,7 +10,7 @@ export const Community = () => {
         <div className="community-wrapper">
 
             <div className="community-left">
-                left
+                left - 3d model
             </div>
 
             <div className="community-right">
