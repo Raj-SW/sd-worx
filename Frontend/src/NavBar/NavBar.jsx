@@ -2,11 +2,9 @@ import './NavBar.css';
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../assets/img/sdworx_logo.png';
-
+import {UserAuthPage} from "../Pages/UserAuthPage";
 import { HashLink } from 'react-router-hash-link';
-import {
-  BrowserRouter as Router
-} from "react-router-dom";
+import {BrowserRouter as Router,Route,Link, Routes} from "react-router-dom";
 
 export const NavBar = () => {
 
@@ -31,8 +29,9 @@ export const NavBar = () => {
     setActiveLink(value);
   }
 
+
   return (
-    <Router>
+    <div>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
@@ -50,14 +49,21 @@ export const NavBar = () => {
               <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
             </Nav>
+            
             <span className="navbar-text">
-              <HashLink to='#connect'>
-                <button className="vvd"><span>Sign Up</span></button>
-              </HashLink>
+              <Nav.Link as={Link} to={'/UserAuthPage'}>
+                <button className="vvd" ><span>Sign Up</span></button>
+              </Nav.Link>
             </span>
+          
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </Router>
+
+     <Routes>
+           <Route path="/UserAuthPage" element={<UserAuthPage/>} />
+      </Routes>
+
+    </div>
   )
 }

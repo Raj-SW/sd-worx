@@ -41,7 +41,7 @@ body {
   overflow-x: hidden;
   position: relative;
   color: #ffffff ;
-  font-family: 'Centra', sans-serif !important;
+    font-family: 'Centra', sans-serif !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -99,7 +99,8 @@ p.danger {
 .App{
    scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  /* overflow-y: auto; */
+  /* overflow-y: auto;
+   */
 }
 
 
@@ -124,24 +125,16 @@ p.danger {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--scarlet);
 }
-
+/* normal text */
 .text-normal-darkGray{
   color: var(--darkGray);
-  /* -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--darkGray); */
 }
-.stroke-text-normal-blueGray{
-  color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--blueGray);
+.text-normal-blueGray{
+  color: var(--blueGray);
 }
-.stroke-text-normal-orange{
-  color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--orange);
+.text-normal-orange{
+  color: var(--orange);
 }
-.stroke-text-normal-scarlet{
+.text-normal-scarlet{
   color: var(--scarlet);
-  /* -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--scarlet); */
 }
