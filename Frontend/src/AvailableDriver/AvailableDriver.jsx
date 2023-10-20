@@ -1,32 +1,37 @@
 import React, { useState } from 'react';
 import { Avatar, List, Skeleton, DatePicker, Space, Modal, Button, notification } from 'antd';
 import Map from '../User/Driver/Map/Map'
+import axios from 'axios';
 
 function AvailableDrivers() {
     const [dateSelected, setDateSelected] = useState(false);
     const [isModalVisible, setIsModalVisible] = useState(false);
-    const [selectedDriver, setSelectedDriver] = useState(null);
+    const [data, setData] = useState([]);
     const [shareCarModalVisible, setShareCarModalVisible] = useState(false);
 
     const [api, contextHolder] = notification.useNotification();
 
-    const data = [
-        {
-          title: 'Ant Design Title 1',
-        },
-        {
-          title: 'Ant Design Title 2',
-        },
-        {
-          title: 'Ant Design Title 3',
-        },
-        {
-          title: 'Ant Design Title 4',
-        },
-      ];
-
-      const onChange = (date, dateString) => {
+      const onChange = async (date, dateString) => {
         console.log(date, dateString);
+
+        const queryParams = {
+            auth: {
+                app_token: "P14GBkNbwq0sSg7sIDKymbF8gveYreT28p9xq23GQ1it66vgaxLytW4LxnR5Ohvn64qGPTprS7U6XzrLOpSyko3ltJ1426uJMVx9zCb6Uj9J1NEPuva4oKfLJxiUt9Poej8CLtTCh1E0o81izWt42"
+            },
+            data: {
+                date: "2023-10-21"
+            }
+        }
+
+        const YOUR_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aXRsZSI6ImFjY2VzcyIsImlkIjoiNjUzMzAzOTM4MjZiNzA4MGE0ODllZGMzIiwiZW1haWwiOiJjaGF2aUBwYXgxLmNvbSIsImlhdCI6MTY5Nzg0MjU4OSwiZXhwIjoxNjk3OTI4OTg5fQ.NSx5cD5XqUhvMtazC9oaUwgLRtiqOQt8V0ltevRP4NA";
+        const response = await axios.post('http://localhost:3550/v1/trip/list', queryParams, {
+            headers: {
+                'Authorization': `Bearer ${YOUR_TOKEN}`
+            }
+            });
+            console.log(response.data.data);
+        setData(response.data.data)
+        
         if (date) {
             setDateSelected(true);
         }
@@ -89,8 +94,8 @@ function AvailableDrivers() {
               <List.Item actions={[ <Button danger  key="list-loadmore-edit" type='text' onClick={() => showModal(item)}>Driver's Route</Button>,  <Button ghost type='primary' key="list-loadmore-more" onClick={showShareCarModal}>Share Car</Button> ]}>
                 <List.Item.Meta
                   avatar={<Avatar src={`https://th.bing.com/th/id/OIP.AkKR5-4AJhHTNNDMp0NxvQAAAA?pid=ImgDet&rs=1`} />}
-                  title={item.title}
-                  description={<span dangerouslySetInnerHTML={{ __html: "Address: St Pierre, Moka<br>Time leaving house: 08:00" }} />}
+                  title={item.driver.name}
+                  description={<span dangerouslySetInnerHTML={{ __html: `Address: ${item.driver.address} <br>Drive Time on Road: ${item.departure_time} <br> Pickup Time: ` }} />}
                 />
               </List.Item>
             )}
