@@ -19,14 +19,22 @@ module.exports = {
     fn: async function (inputs, exits) {
         var req = this.req,
             error = [],
-            searchCriteria = {};
+            bookingList = [];
 
         try {
-            if (inputs.data && inputs.data.trip_id) {
+            if (inputs.data) {
 
-                bookingList = await Booking.find({
-                    trip: inputs.data.trip_id
-                }).populate("trip");
+                if (inputs.data.trip_id) {
+                    bookingList = await Booking.find({
+                        trip: inputs.data.trip_id
+                    }).populate("trip");
+                }
+
+                if (inputs.data.date) {
+                    bookingList = await Booking.find({
+                        date: inputs.data.date
+                    }).populate("trip");
+                }
 
                 return exits.success({
                     data: bookingList

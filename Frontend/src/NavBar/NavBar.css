@@ -53,7 +53,7 @@ nav.navbar {
     margin-left: 18px;
       position: relative;
       background-color: transparent;
-      transition: 0.3s ease-in-out;
+      transition: background-color 0.3s ease-in-out;
   }
   .navbar-text button span {
     z-index: 1;

@@ -8,8 +8,12 @@ import {Community} from './Community/Community.jsx'
 import AvailableDrivers from './AvailableDriver/AvailableDriver'
 import { ConfigProvider } from 'antd';
 import CarPoolingManagement from './CarpoolingManagement/CarPoolingManagement'
+import {Footer} from './Footer/Footer.jsx'
+import {Forms} from './Forms/Forms.jsx'
+import {UserAuthPage} from '../src/Pages/UserAuthPage.jsx'
 
 function App() {
+
   return (
     <ConfigProvider
     theme={{

@@ -13,7 +13,7 @@
     text-transform: uppercase;
     font-size: 3rem;
     font-weight: bold;
-     text-overflow: inherit;
+    text-overflow: inherit;
 }
 
 .hero-text>div:nth-of-type(3){
