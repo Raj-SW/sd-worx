@@ -6,7 +6,7 @@ module.exports = {
         },
         car: {
             model: "Car",
-            required: true
+            required: false
         },
         parking_booking: {
             model: "ParkingBooking",
