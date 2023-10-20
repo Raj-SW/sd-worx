@@ -10,6 +10,11 @@ module.exports = {
         },
         parking_booking: {
             model: "ParkingBooking",
+            required: false
+        },
+        date: {
+            // YYYY-MM-DD
+            type: "string",
             required: true
         },
         departure_time: {
@@ -18,11 +23,11 @@ module.exports = {
         },
         departure_location_lat: {
             type: "number",
-            required: true
+            required: false
         },
         departure_location_long: {
             type: "number",
-            required: true
+            required: false
         },
         available_for_carpool: {
             type: "string",
@@ -30,7 +35,7 @@ module.exports = {
         },
         available_seats: {
             type: "number",
-            required: false
+            required: true
         },
         recurring_trip: {
             type: "boolean",

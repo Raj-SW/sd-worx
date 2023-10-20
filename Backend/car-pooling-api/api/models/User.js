@@ -15,6 +15,14 @@ module.exports = {
         phone: {
             type: "string",
             required: true
+        },
+        location: {
+            type: "json",
+            required: true
+        },
+        address: {
+            type: "string",
+            required: true
         }
     },
     constants: {

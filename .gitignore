@@ -1,1 +1,4 @@
-car-pooling-api/package-lock.json
+Backend/car-pooling-api/package-lock.json
+Backend/car-pooling-api/node_modules
+Backend/car-pooling-api/config/env/developent/appsettings
+Backend/car-pooling-api/config/env/development/appsettings.js
