@@ -10,16 +10,14 @@ function AvailableDrivers() {
     const [shareCarModalVisible, setShareCarModalVisible] = useState(false);
 
     const [api, contextHolder] = notification.useNotification();
-
+    console.log(process.env)
       const onChange = async (date, dateString) => {
-        console.log(date, dateString);
-
         const queryParams = {
             auth: {
-                app_token: "P14GBkNbwq0sSg7sIDKymbF8gveYreT28p9xq23GQ1it66vgaxLytW4LxnR5Ohvn64qGPTprS7U6XzrLOpSyko3ltJ1426uJMVx9zCb6Uj9J1NEPuva4oKfLJxiUt9Poej8CLtTCh1E0o81izWt42"
+                app_token: process.env.REACT_APP_TOKEN
             },
             data: {
-                date: "2023-10-21"
+                date: dateString
             }
         }
 
@@ -29,10 +27,9 @@ function AvailableDrivers() {
                 'Authorization': `Bearer ${YOUR_TOKEN}`
             }
             });
-            console.log(response.data.data);
         setData(response.data.data)
         
-        if (date) {
+        if (response.data.data) {
             setDateSelected(true);
         }
     };
