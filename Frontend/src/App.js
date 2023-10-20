@@ -5,17 +5,30 @@ import {NavBar} from './NavBar/NavBar'
 import {Hero} from './Hero/Hero.jsx'
 import {Tabs} from './Tabs/Tabs.jsx'
 import {Community} from './Community/Community.jsx'
-import Driver from './User/Driver/Driver'
+import AvailableDrivers from './AvailableDriver/AvailableDriver'
+import { ConfigProvider } from 'antd';
+import CarPoolingManagement from './CarpoolingManagement/CarPoolingManagement'
 
 function App() {
   return (
-    <div className="App">
-    <NavBar/>
-    <Hero/>
+    <ConfigProvider
+    theme={{
+      token: {
+        // Seed Token
+        colorPrimary: '#f8ad07',
+      },
+    }}
+  >
+     <div className="App">
+    { <NavBar/>
+    /* <Hero/>
     <Tabs/>
-    <Community/>
+    <Community/> */}
+    <CarPoolingManagement />
     </div>
-   );
+   
+  </ConfigProvider>
+  )
 }
 
 export default App;

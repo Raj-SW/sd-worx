@@ -30,6 +30,8 @@ async function getRouteDetails(points) {
         'subscription-key': AZURE_MAPS_SUBSCRIPTION_KEY,
         'query': query
     };
+
+    console.log(params)
     try {
         const response = await axios.get(AZURE_MAPS_URL, { params });
         const route = response.data.routes[0].summary;
@@ -106,8 +108,6 @@ const usersData = [
         "name": "user2",
         "seats": 3,
         "PassengersConfirmed": [
-            "user4",
-            "user3"
         ],
         "leaveTime": "08:00"
     },

@@ -1,5 +1,5 @@
 import React from 'react';
-import RouteExample from './Map/Map';
+import Map from './Map/Map';
 
 const mapOptions = {
     authOptions: {
@@ -41,7 +41,7 @@ function Driver() {
     }
 
     return (
-        <RouteExample />
+        <Map />
     );
 }
 

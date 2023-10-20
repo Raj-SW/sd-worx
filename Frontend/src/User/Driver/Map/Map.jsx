@@ -1,4 +1,4 @@
-import React, { memo, useMemo, useState, ReactElement, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import {
   AzureMap,
@@ -6,31 +6,32 @@ import {
   AzureMapFeature,
   AzureMapLayerProvider,
   AzureMapsProvider,
-  IAzureMapOptions,
   AzureMapPopup,
 } from 'react-azure-maps';
-import { AuthenticationType, data, MapMouseEvent, PopupOptions } from 'azure-maps-control';
+import { data } from 'azure-maps-control';
 
-const option = {
-    authOptions: {
-      authType: 'subscriptionKey',
-      subscriptionKey: process.env.REACT_APP_AZURE_MAPS_KEY,
-    },
-    center: [57.53249, -20.21962],
-    zoom: 10,
-    view: 'Auto',
-  };
+
 
 
   const points = [
     { coordinates: [57.53446305014205, -20.220789655563557], name: 'John', pickupTime: "8:30 AM"  },
     { coordinates: [57.52866531239014, -20.216823114003493], name: 'Alice', pickupTime: "8:30 AM"  },
-    { coordinates: [57.52866531239014, -20.216823114003483], name: 'ce', pickupTime: "8:30 AM"  },
+    { coordinates: [57.52866531239077, -20.216823114003483], name: 'ce', pickupTime: "8:30 AM"  },
     { coordinates: [57.48959774078488, -20.243973593434518], name: 'Bob', pickupTime: "8:30 AM"  },
   ];
 
 
 let pointId = 0;
+
+const option = {
+  authOptions: {
+    authType: 'subscriptionKey',
+    subscriptionKey: process.env.REACT_APP_AZURE_MAPS_KEY,
+  },
+  center: ( points.length > 1 ? points[points.length/2].coordinates : points[0].coordinates),
+  zoom: 13,
+  view: 'Auto',
+};
 
 const renderPoint = (point) => {
     const rendId = pointId++;
@@ -51,7 +52,7 @@ const renderPoint = (point) => {
 
 
 
-const RouteExample= () => {
+const Map= () => {
     const [routeCoordinates, setRouteCoordinates] = useState([]);
     const [renderKey, setRenderKey] = useState(Math.random());
     const [popupOptions, setPopupOptions] = useState({});
@@ -79,12 +80,6 @@ const RouteExample= () => {
             });
             
     }, []);
-
-    const memoizedMarkerRender = useMemo(() => {
-        return points.map((marker) => {
-            return renderPoint(marker);
-        });
-    }, [points]);
 
   return (
     <div style={wrapperStyles.map}>
@@ -206,4 +201,4 @@ time: {
 }
 };
 
-export default RouteExample;
+export default Map;
