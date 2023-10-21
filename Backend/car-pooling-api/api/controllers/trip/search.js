@@ -32,7 +32,7 @@ module.exports = {
                     trip: tripList[0].id
                 }).populate("user");
 
-                tripList[0].passengers = bookingList.map(user => user.name);
+                tripList[0].passengers = bookingList.map(booking => booking.user.name).join(", ");
 
                 delete tripList[0].driver.password
 

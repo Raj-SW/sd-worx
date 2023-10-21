@@ -25,10 +25,10 @@ module.exports = {
                 userList = await User.find({ id: req.session.user_id });
                 delete userList[0].password;
 
-                carList = await Car.find({ user: req.session.user_id });
+                tripList = await Trip.find({ driver: req.session.user_id });
                 userList[0].driver = false;
 
-                if (carList.length > 0) {
+                if (tripList.length > 0) {
                     userList[0].driver = true;
                 }
 
