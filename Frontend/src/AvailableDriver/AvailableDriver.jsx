@@ -116,7 +116,7 @@ function AvailableDrivers() {
           visible={isModalVisible}
           width={800}
           footer={[
-            <Button defaultColor='#f8ad07'  onClick={handleModalClose}>Close Map</Button>
+            <Button key={currentDriver.tripId + Math.random()}  onClick={handleModalClose}>Close Map</Button>
           ]}
           closable={false}
         >
