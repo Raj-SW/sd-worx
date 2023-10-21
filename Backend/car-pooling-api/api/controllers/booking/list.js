@@ -19,25 +19,33 @@ module.exports = {
     fn: async function (inputs, exits) {
         var req = this.req,
             error = [],
+            returnList = [],
             bookingList = [];
 
         try {
             if (inputs.data) {
 
                 if (inputs.data.trip_id) {
-                    bookingList = await Booking.find({
+                    returnList = await Booking.find({
                         trip: inputs.data.trip_id
                     }).populate("trip");
                 }
 
                 if (inputs.data.date) {
                     bookingList = await Booking.find({
-                        date: inputs.data.date
+                        user: req.session.user_id
                     }).populate("trip");
+
+                    for (const booking of bookingList) {
+                        console.log(booking)
+                        if (booking.trip.date == inputs.data.date) {
+                            returnList.push(booking);
+                        }
+                    }
                 }
 
                 return exits.success({
-                    data: bookingList
+                    data: returnList
                 })
 
             } else {
