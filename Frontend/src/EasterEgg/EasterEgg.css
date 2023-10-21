@@ -1,0 +1,19 @@
+.easter-egg-wrapper{
+padding: 1rem;
+
+background-color: #3036420d;
+;
+
+}
+.easter-egg-container{
+
+}
+.easter-egg-container h4,
+.easter-egg-container h3 {
+    padding-left: 3rem;
+}
+
+.easter-egg-container canvas{
+padding: 5rem;
+height: 100vh;
+}

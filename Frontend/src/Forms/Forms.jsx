@@ -69,7 +69,7 @@ export const Forms = () => {
                         <p> <Link to="/CreateTrip">Another Page</Link></p>
                       </div>
                       <p>
-                        Forgot<a href="">Password?</a>{" "}
+                        Forgot<a href="#">Password?</a>{" "}
                         <span>or</span>
                         <span className="toggle" onClick={toggleDiv}> Sign Up</span>
                       </p>
