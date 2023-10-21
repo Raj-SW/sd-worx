@@ -51,6 +51,12 @@ module.exports = {
                 pickupTimes = await sails.helpers.trip.driverPickupTimes(tripList[0].departure_time, tripList[0].driver.location, usersArray)
                 pickupTimes = pickupTimes.pickup_time;
 
+                pickupTimes = [{
+                    coordinates: tripList[0].driver.location,
+                    name: tripList[0].driver.name,
+                    pickup_time: tripList[0].departure_time
+                }, ...pickupTimes]
+
                 routePath = [tripList[0].driver.location, ...routePath, sails.config.appsettings.destination];
                 queryString = routePath.map(point => `${point.lat},${point.long}`).join(':');
                 // queryString = routePath.map(p => `${p.coordinates[1]}, ${p.coordinates[0]}`).join(':')
