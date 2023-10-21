@@ -1,22 +1,28 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-
+import { Outlet } from 'react-router-dom'
 import {NavBar} from './NavBar/NavBar'
-import {Hero} from './Hero/Hero.jsx'
-import {Tabs} from './Tabs/Tabs.jsx'
-import {Community} from './Community/Community.jsx'
-import {Footer} from './Footer/Footer.jsx'
-import {Forms} from './Forms/Forms.jsx'
-import {UserAuthPage} from '../src/Pages/UserAuthPage.jsx'
-import {Home} from '../src/Home/Home.jsx'
-function App() {
+import { ConfigProvider, Breadcrumb, Layout, Menu, theme } from 'antd';
+import CarPoolingManagement from './CarpoolingManagement/CarPoolingManagement'
 
+function App() {
+  const { Header, Content } = Layout;
   return (
-    <div className="App">
-      <NavBar/>
-      <Home/>
+    <ConfigProvider
+    theme={{
+      token: {
+        // Seed Token
+        colorPrimary: '#f8ad07',
+      },
+    }}
+  >
+     <div className="App">
+        <NavBar />
+      <Content > <Outlet /></Content>
     </div>
-   );
+   
+  </ConfigProvider>
+  )
 }
 
 export default App;
