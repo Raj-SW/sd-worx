@@ -74,7 +74,7 @@ module.exports = {
                         }
 
                         if (routeViaUserDistance.distance - directRouteDistance.distance <= thresholdKm) {
-                            pickupTimeResponse = await sails.helpers.trip.estimatePickupTime(trip.departure_time, trip.driver.location, [...confirmedPax, requestingUser[0]])
+                            pickupTimeResponse = await sails.helpers.trip.estimatePickupTime(trip.departure_time, trip.driver.location, [...confirmedPax, requestingUser[0]], requestingUser[0].name)
                             suitableTrips.push({
                                 trip_id: trip.id,
                                 driver: {
@@ -93,7 +93,7 @@ module.exports = {
                                 available_seats: trip.available_seats - acceptedBookingCount,
                                 price: trip.price,
                                 departure_time: trip.departure_time,
-                                estimated_pickup_time: pickupTimeResponse.pickup_times
+                                estimated_pickup_time: pickupTimeResponse.pickup_time
                             });
                         }
                     }
