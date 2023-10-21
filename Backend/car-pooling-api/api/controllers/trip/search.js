@@ -28,17 +28,23 @@ module.exports = {
                     driver: inputs.data.driver_id
                 }).populate("driver");
 
-                bookingList = await Booking.find({
-                    trip: tripList[0].id
-                }).populate("user");
+                if (tripList.length > 0) {
+                    bookingList = await Booking.find({
+                        trip: tripList[0].id
+                    }).populate("user");
 
-                tripList[0].passengers = bookingList.map(booking => booking.user.name).join(", ");
+                    tripList[0].passengers = bookingList.map(booking => booking.user.name).join(", ");
 
-                delete tripList[0].driver.password
+                    delete tripList[0].driver.password
 
-                return exits.success({
-                    data: tripList
-                })
+                    return exits.success({
+                        data: tripList
+                    })
+                } else {
+                    return exits.success({
+                        data: tripList
+                    })
+                }
 
             } else {
                 error.push(await sails.helpers.utility.error.getAppError("general.invalid_parameters"));
