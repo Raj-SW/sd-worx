@@ -1,14 +1,11 @@
-import './NavBar.css';
+import "./NavBar.css";
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from '../assets/img/sdworx_logo.png';
-import {UserAuthPage} from "../Pages/UserAuthPage";
-import { HashLink } from 'react-router-hash-link';
-import {BrowserRouter as Router,Route,Link, Routes} from "react-router-dom";
+import logo from "../assets/img/sdworx_logo.png";
+import { Link } from "react-router-dom";
 
 export const NavBar = () => {
-
-  const [activeLink, setActiveLink] = useState('home');
+  const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -18,17 +15,16 @@ export const NavBar = () => {
       } else {
         setScrolled(false);
       }
-    }
+    };
 
     window.addEventListener("scroll", onScroll);
 
     return () => window.removeEventListener("scroll", onScroll);
-  }, [])
+  }, []);
 
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
-  }
-
+  };
 
   return (
     <div>
@@ -37,7 +33,8 @@ export const NavBar = () => {
           <Navbar.Brand href="/">
             <img src={logo} alt="Logo" />
             <span>
-             <span>Debug</span><span>Thugs</span>
+              <span>Debug</span>
+              <span>Thugs</span>
             </span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -45,25 +42,47 @@ export const NavBar = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-              <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-              <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+              <Nav.Link
+                href="/home"
+                className={
+                  activeLink === "home" ? "active navbar-link" : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("home")}
+              >
+                Home
+              </Nav.Link>
+              <Nav.Link
+                href="#skills"
+                className={
+                  activeLink === "skills" ? "active navbar-link" : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("skills")}
+              >
+                Skills
+              </Nav.Link>
+              <Nav.Link
+                href="#projects"
+                className={
+                  activeLink === "projects"
+                    ? "active navbar-link"
+                    : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("projects")}
+              >
+                Projects
+              </Nav.Link>
             </Nav>
-            
+
             <span className="navbar-text">
-              <Nav.Link as={Link} to={'/UserAuthPage'}>
-                <button className="vvd" ><span>Sign Up</span></button>
+              <Nav.Link as={Link} to={"/auth"}>
+                <button className="vvd">
+                  <span>Sign Up</span>
+                </button>
               </Nav.Link>
             </span>
-          
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
-     <Routes>
-           <Route path="/UserAuthPage" element={<UserAuthPage/>} />
-      </Routes>
-
     </div>
-  )
-}
+  );
+};
