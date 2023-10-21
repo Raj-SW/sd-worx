@@ -9,6 +9,7 @@ import {
   AzureMapPopup,
 } from 'react-azure-maps';
 import { data } from 'azure-maps-control';
+import { useNavigate } from 'react-router-dom';
 
 
 let pointId = 0;
@@ -41,12 +42,20 @@ const renderPoint = (point) => {
 
 
 
+
+
 const Map= ({tripId}) => {
     const [routeCoordinates, setRouteCoordinates] = useState([]);
     const [renderKey, setRenderKey] = useState(Math.random());
     const [popupOptions, setPopupOptions] = useState({});
     const [popupProperties, setPopupProperties] = useState({});
     const [points, setPoints] = useState([]);
+    const [isLoggedIn, setLoggedIn] = useState(!!localStorage.getItem('token'));
+    const navigate = useNavigate();
+
+    if (!isLoggedIn) {
+      navigate("/auth")
+    }
 
     useEffect(() => {
       const queryParams = {
@@ -57,7 +66,7 @@ const Map= ({tripId}) => {
             trip_id: tripId
         }
     }
-      const YOUR_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aXRsZSI6ImFjY2VzcyIsImlkIjoiNjUzMzAzOTM4MjZiNzA4MGE0ODllZGMzIiwiZW1haWwiOiJjaGF2aUBwYXgxLmNvbSIsImlhdCI6MTY5Nzg0MjU4OSwiZXhwIjoxNjk3OTI4OTg5fQ.NSx5cD5XqUhvMtazC9oaUwgLRtiqOQt8V0ltevRP4NA";
+      const YOUR_TOKEN = localStorage.getItem('token');
        axios.post('http://localhost:3550/v1/trip/pickups', queryParams, {
           headers: {
               'Authorization': `Bearer ${YOUR_TOKEN}`

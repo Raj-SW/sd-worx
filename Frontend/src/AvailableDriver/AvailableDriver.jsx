@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Avatar, List, Skeleton, DatePicker, Space, Modal, Button, notification } from 'antd';
 import Map from '../User/Driver/Map/Map'
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 function AvailableDrivers() {
     const [dateSelected, setDateSelected] = useState(false);
@@ -9,6 +10,14 @@ function AvailableDrivers() {
     const [currentDriver, setCurrentDriver] = useState({tripId: 0});
     const [data, setData] = useState([]);
     const [shareCarModalVisible, setShareCarModalVisible] = useState(false);
+    const navigate = useNavigate();
+
+    const [isLoggedIn, setLoggedIn] = useState(!!localStorage.getItem('token'));
+
+    if (!isLoggedIn) {
+      navigate("/auth")
+    }
+    
 
     const [api, contextHolder] = notification.useNotification();
       const onChange = async (date, dateString) => {
@@ -21,7 +30,8 @@ function AvailableDrivers() {
             }
         }
 
-        const YOUR_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aXRsZSI6ImFjY2VzcyIsImlkIjoiNjUzMzAzOTM4MjZiNzA4MGE0ODllZGMzIiwiZW1haWwiOiJjaGF2aUBwYXgxLmNvbSIsImlhdCI6MTY5Nzg0MjU4OSwiZXhwIjoxNjk3OTI4OTg5fQ.NSx5cD5XqUhvMtazC9oaUwgLRtiqOQt8V0ltevRP4NA";
+        const YOUR_TOKEN = localStorage.getItem('token');
+        console.log(YOUR_TOKEN)
         const response = await axios.post('http://localhost:3550/v1/trip/list', queryParams, {
             headers: {
                 'Authorization': `Bearer ${YOUR_TOKEN}`

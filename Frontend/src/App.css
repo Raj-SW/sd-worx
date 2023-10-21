@@ -138,3 +138,7 @@ p.danger {
 .text-normal-scarlet{
   color: var(--scarlet);
 }
+
+.error-message {
+  color: #e4003a;
+}

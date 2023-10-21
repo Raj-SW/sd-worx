@@ -3,10 +3,19 @@ import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "../assets/img/sdworx_logo.png";
 import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
+  const [isLoggedIn, setLoggedIn] = useState(!!localStorage.getItem('token'));
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+      localStorage.removeItem('token');
+      setLoggedIn(false);
+      navigate("/auth")
+  };
 
   useEffect(() => {
     const onScroll = () => {
@@ -51,35 +60,40 @@ export const NavBar = () => {
               >
                 Home
               </Nav.Link>
-              <Nav.Link
-                href="#skills"
-                className={
-                  activeLink === "skills" ? "active navbar-link" : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("skills")}
-              >
-                Skills
-              </Nav.Link>
-              <Nav.Link
-                href="#projects"
-                className={
-                  activeLink === "projects"
-                    ? "active navbar-link"
-                    : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("projects")}
-              >
-                Projects
-              </Nav.Link>
+              {isLoggedIn && (
+             <Nav.Link
+             href="/car-pooling"
+             className={
+               activeLink === "car-pooling" ? "active navbar-link" : "navbar-link"
+             }
+             onClick={() => onUpdateActiveLink("car-pooling")}
+           >
+            carpooling
+           </Nav.Link>
+            )}
+              
             </Nav>
 
-            <span className="navbar-text">
+            {isLoggedIn && (
+              <span className="navbar-text">
+              <Nav.Link>
+                <button onClick={() => handleLogout()} className="vvd">
+                  <span>Sign Out</span>
+                </button>
+              </Nav.Link>
+            </span>
+            )}
+
+            {!isLoggedIn && (
+              <span className="navbar-text">
               <Nav.Link as={Link} to={"/auth"}>
                 <button className="vvd">
                   <span>Sign Up</span>
                 </button>
               </Nav.Link>
             </span>
+            )}
+            
           </Navbar.Collapse>
         </Container>
       </Navbar>
