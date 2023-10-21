@@ -34,19 +34,25 @@ module.exports.routes = {
     action: "trip/pickups",
   },
 
-  //trip
+  "post /v1/trip/search": {
+    action: "trip/search",
+  },
+
+  //booking
   "post /v1/booking/new": {
     action: "booking/new",
   },
 
-  "post /v1/booking/accept": {
-    action: "booking/accept",
-  },
+  // driver can accept or reject a booking
+  // "post /v1/booking/accept": {
+  //   action: "booking/accept",
+  // },
 
-  "post /v1/booking/reject": {
-    action: "booking/reject",
-  },
+  // "post /v1/booking/reject": {
+  //   action: "booking/reject",
+  // },
 
+  // get list of possible drivers for a user wishing to carpool
   "post /v1/booking/list": {
     action: "booking/list",
   },

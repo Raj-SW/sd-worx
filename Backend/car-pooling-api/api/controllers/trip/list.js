@@ -84,11 +84,6 @@ module.exports = {
                                     email: trip.driver.email,
                                     phone: trip.driver.phone,
                                 },
-                                car: {
-                                    make: trip.car.make,
-                                    model: trip.car.model,
-                                    registration_plate: trip.car.registration_plate,
-                                },
                                 passengers: confirmedPax.map(user => user.name),
                                 available_seats: trip.available_seats - acceptedBookingCount,
                                 price: trip.price,
