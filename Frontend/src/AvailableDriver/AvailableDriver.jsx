@@ -6,11 +6,11 @@ import axios from 'axios';
 function AvailableDrivers() {
     const [dateSelected, setDateSelected] = useState(false);
     const [isModalVisible, setIsModalVisible] = useState(false);
+    const [currentDriver, setCurrentDriver] = useState({tripId: 0});
     const [data, setData] = useState([]);
     const [shareCarModalVisible, setShareCarModalVisible] = useState(false);
 
     const [api, contextHolder] = notification.useNotification();
-    console.log(process.env)
       const onChange = async (date, dateString) => {
         const queryParams = {
             auth: {
@@ -27,6 +27,7 @@ function AvailableDrivers() {
                 'Authorization': `Bearer ${YOUR_TOKEN}`
             }
             });
+            console.log(response.data.data)
         setData(response.data.data)
         
         if (response.data.data) {
@@ -34,7 +35,8 @@ function AvailableDrivers() {
         }
     };
 
-    const showModal = (item) => {  
+    const showModal = (item) => {
+        setCurrentDriver(item);
         setIsModalVisible(true);
     };
 
@@ -88,11 +90,12 @@ function AvailableDrivers() {
             itemLayout="horizontal"
             dataSource={data}
             renderItem={(item, index) => (
-              <List.Item actions={[ <Button danger  key="list-loadmore-edit" type='text' onClick={() => showModal(item)}>Driver's Route</Button>,  <Button ghost type='primary' key="list-loadmore-more" onClick={showShareCarModal}>Share Car</Button> ]}>
+              <List.Item actions={[ <Button danger  key={item.driver.id} type='text' onClick={() => showModal(item)}>Driver's Route</Button>,  <Button ghost type='primary' key="list-loadmore-more" onClick={showShareCarModal}>Share Car</Button> ]}>
                 <List.Item.Meta
                   avatar={<Avatar src={`https://th.bing.com/th/id/OIP.AkKR5-4AJhHTNNDMp0NxvQAAAA?pid=ImgDet&rs=1`} />}
                   title={item.driver.name}
-                  description={<span dangerouslySetInnerHTML={{ __html: `Address: ${item.driver.address} <br>Drive Time on Road: ${item.departure_time} <br> Pickup Time: ` }} />}
+                  description={<span dangerouslySetInnerHTML={{ __html: `Address: ${item.driver.address} <br>Drive Time on Road: ${item.departure_time} <br> Pickup Time: ${item.estimated_pickup_time} <br> Seats Left: ${item.available_seats
+                  }` }} />}
                 />
               </List.Item>
             )}
@@ -107,7 +110,7 @@ function AvailableDrivers() {
           ]}
           closable={false}
         >
-         <Map />
+         <Map tripId={currentDriver.trip_id} />
         </Modal>
 
         <Modal 

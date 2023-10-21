@@ -34,8 +34,8 @@ module.exports = {
             });
         } catch (err) {
             sails.log.debug("get-route-details.js (Line: 24) : err"); //debug
-            // sails.log.debug(err); //debug
-            sails.log.debug(err.response.data.error); //debug
+            sails.log.debug(err); //debug
+            // sails.log.debug(err.response.data.error); //debug
 
             return exits.success(null);
         }

@@ -15,10 +15,6 @@ module.exports = {
             type: ['ref'],
             required: true
         },
-        passenger_name: {
-            type: "string",
-            required: false
-        },
     },
 
     fn: async function (inputs, exits) {
@@ -26,25 +22,20 @@ module.exports = {
             var routePoints = [inputs.driver_location],
                 currentLeaveTimeResponse = await sails.helpers.trip.timeToMinutes(inputs.departure_time),
                 currentLeaveTime = currentLeaveTimeResponse.minutes,
-                pickupTimesArray = [],
-                pickupTimes = {};
+                pickupTimes = [];
 
             for (const passenger of inputs.passengers) {
-                routeToPassengerDetails = await sails.helpers.trip.getRouteDetails([...routePoints, passenger.location]);
+                routeToPassengerDetails = await sails.helpers.trip.getRouteDetails([inputs.driver_location, passenger.location]);
 
-                duration = currentLeaveTime + routeToPassengerDetails.time;
-                timeConversionResponse = await sails.helpers.trip.minutesToTime(duration);
-                pickupTimes[passenger.name] = timeConversionResponse.time;
-                pickupTimesArray.push(timeConversionResponse.time);
+                currentLeaveTime += routeToPassengerDetails.time;
+                timeConversionResponse = await sails.helpers.trip.minutesToTime(currentLeaveTime);
+                pickupTimes.push({
+                    coordinates: passenger.location,
+                    name: passenger.name,
+                    pickup_time: timeConversionResponse.time,
+                });
                 routePoints.push(passenger.location);
-                if (inputs.passenger_name == passenger.name) {
-                    return exits.success({
-                        pickup_time: timeConversionResponse.time
-                    });
-                }
             }
-
-
 
             return exits.success({
                 pickup_time: pickupTimes
