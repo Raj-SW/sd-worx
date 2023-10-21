@@ -18,7 +18,6 @@ function AvailableDrivers() {
       navigate("/auth")
     }
     
-
     const [api, contextHolder] = notification.useNotification();
       const onChange = async (date, dateString) => {
         const queryParams = {
@@ -29,6 +28,7 @@ function AvailableDrivers() {
                 date: dateString
             }
         }
+
 
         const YOUR_TOKEN = localStorage.getItem('token');
         console.log(YOUR_TOKEN)

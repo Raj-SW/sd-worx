@@ -18,8 +18,9 @@ const option = {
   authOptions: {
     authType: 'subscriptionKey',
     subscriptionKey: process.env.REACT_APP_AZURE_MAPS_KEY,
-  },
-  zoom: 13,
+  }, 
+  center: [57.57649211607269, -20.260506221904897],
+  zoom: 8,
   view: 'Auto',
 };
 
