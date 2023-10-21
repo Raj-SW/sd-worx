@@ -1,18 +1,20 @@
 import React, { useState, useEffect } from "react";
 import "./UserDashboard.css";
-import Button from "react-bootstrap/Button";
-import Col from "react-bootstrap/Col";
-import Form from "react-bootstrap/Form";
-import Row from "react-bootstrap/Row";
-import InputGroup from "react-bootstrap/InputGroup";
 import axios from 'axios';
 import { Avatar, List, Skeleton, DatePicker, Space, Modal, notification } from 'antd';
+import { Form, Row, Col, Input, Button, TimePicker } from 'antd';
 
 export const CreateTrip = () => {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [seats, setSeats] = useState("");
   const [trips, setTrips] = useState([]);
+
+  const [form] = Form.useForm();
+
+  const handleFinish = (values) => {
+    console.log('Success:', values);
+  };
 
   // For handling date
   const [selectedDate, setSelectedDate] = useState("");
@@ -124,46 +126,56 @@ export const CreateTrip = () => {
   }, [])
 
   return (
+    <>
     <div className="CreateTrip-wrapper">
       <div className="create-trip-container">
-        <Form className="">
-          <Row className="align-items-center px-3 py-3">
-            <Col xs="auto" className="px-3">
-              <Form.Label htmlFor="inlineFormInput">Date</Form.Label>
-              <Form.Control
-                type="date"
-                value={selectedDate}
-                onChange={handleDateChange}
-                placeholder="Date"
-              />
+        <Form
+          form={form}
+          onFinish={handleFinish}
+          autoComplete="off"
+        >
+          <Row gutter={16} align="middle">
+            <Col xs={24} sm={6}>
+              <Form.Item
+                label="Date"
+                name="date"
+                rules={[{ required: true, message: 'Please select a date!' }]}
+              >
+                <DatePicker onChange={handleDateChange} />
+              </Form.Item>
             </Col>
-            <Col xs="auto" className="px-3">
-              <Form.Label htmlFor="inlineFormInputGroup">Time</Form.Label>
-              <InputGroup className="mb-2">
-                <Form.Control
-                  id="inlineFormInputGroup"
-                  type="time"
-                  value={selectedTime}
-                  onChange={handleTimeChange}
-                />
-              </InputGroup>
+            <Col xs={24} sm={6}>
+              <Form.Item
+                label="Time"
+                name="time"
+                rules={[{ required: true, message: 'Please select a time!' }]}
+              >
+                <TimePicker format="HH:mm" onChange={handleTimeChange} />
+              </Form.Item>
             </Col>
-            <Col xs="auto" className="px-3">
-              <Form.Label htmlFor="inlineFormInput">Seats</Form.Label>
-              <Form.Control
-                type="number"
-                value={selectedNumber}
-                onChange={handleNumberChange}
-              />
+            <Col xs={24} sm={6}>
+              <Form.Item
+                label="Seats"
+                name="seats"
+                rules={[
+                  { required: true, message: 'Please enter the number of seats!' },
+                  { type: 'number', min: 1, message: 'Seats should be at least 1!' }
+                ]}
+              >
+                <Input type="number" onChange={handleNumberChange} />
+              </Form.Item>
             </Col>
-            <Col xs="auto" className="px-3">
-              <div className="UDB-btn">
-                <button className="vvd" onClick={handleCreateTrip}><span>Create Trip</span></button>
-              </div>
+            <Col xs={24} sm={6}>
+              <Form.Item>
+                <Button type="primary" htmlType="submit">
+                  Create Trip
+                </Button>
+              </Form.Item>
             </Col>
           </Row>
         </Form>
       </div>
+    </div>
 
 
       <List
@@ -186,38 +198,8 @@ export const CreateTrip = () => {
           </List.Item>
         )}
       />
-    </div>
+    </>
   );
 };
 
 export default CreateTrip;
-{
-  /* <form onSubmit={handleSubmit} className="">
-  <div className="date-container">
-    <label htmlFor="date">Date: </label>
-    <input
-      type="date"
-      value={selectedDate}
-      onChange={handleDateChange}
-      placeholder="Date"
-    />
-  </div>
-  <div className="time-container">
-    <label htmlFor="time">Enter Time</label>
-    <input
-      type="time"
-      value={selectedTime}
-      onChange={handleTimeChange}
-    />
-  </div>
-  <div className="seats-wrapper">
-    <label htmlFor="seats">Enter Seats available:</label>
-    <input
-      type="number"
-      value={selectedNumber}
-      onChange={handleNumberChange}
-    />
-  </div>
-  <button type="submit">Add trip</button>
-</form> */
-}
