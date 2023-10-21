@@ -37,7 +37,7 @@ const handleSubmit = async (e) => {
   }
 
     try {
-      const response = await axios.post('http://localhost:3550/v1/user/login', {
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/user/login`, {
         auth: {
           app_token: "P14GBkNbwq0sSg7sIDKymbF8gveYreT28p9xq23GQ1it66vgaxLytW4LxnR5Ohvn64qGPTprS7U6XzrLOpSyko3ltJ1426uJMVx9zCb6Uj9J1NEPuva4oKfLJxiUt9Poej8CLtTCh1E0o81izWt42"
       },
@@ -50,7 +50,7 @@ const handleSubmit = async (e) => {
       if (response.status == 200) {
         localStorage.setItem('token', response.data.data.login_token
           );
-          navigate('/car-pooling');
+          window.location.href = '/car-pooling';
       } else {
 
       }

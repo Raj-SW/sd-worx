@@ -61,6 +61,7 @@ export const NavBar = () => {
                 Home
               </Nav.Link>
               {isLoggedIn && (
+                <>
              <Nav.Link
              href="/car-pooling"
              className={
@@ -68,8 +69,18 @@ export const NavBar = () => {
              }
              onClick={() => onUpdateActiveLink("car-pooling")}
            >
-            carpooling
+            Car-Pooling
            </Nav.Link>
+            <Nav.Link
+            href="/trips"
+            className={
+              activeLink === "trips" ? "active navbar-link" : "navbar-link"
+            }
+            onClick={() => onUpdateActiveLink("trips")}
+          >
+          Trips
+          </Nav.Link>
+          </>
             )}
               
             </Nav>

@@ -68,12 +68,11 @@ const Map= ({tripId}) => {
         }
     }
       const YOUR_TOKEN = localStorage.getItem('token');
-       axios.post('http://localhost:3550/v1/trip/pickups', queryParams, {
+       axios.post(`${process.env.REACT_APP_API_URL}/trip/pickups`, queryParams, {
           headers: {
               'Authorization': `Bearer ${YOUR_TOKEN}`
           }
           }).then (response => {
-            console.log(response.data.data)
             setRouteCoordinates(response.data.data.coordinates)
             setRenderKey(Math.random());
             const pts = response.data.data.users.map((p) => {
@@ -84,7 +83,6 @@ const Map= ({tripId}) => {
               }
             });
             setPoints(pts);
-            console.log(pts)
           });
     }, [tripId]);
 

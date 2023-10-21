@@ -3,20 +3,18 @@ import "./UserDashboard.css";
 import axios from 'axios';
 import { Avatar, List, Skeleton, DatePicker, Space, Modal, notification } from 'antd';
 import { Form, Row, Col, Input, Button, TimePicker } from 'antd';
+import Map from '../User/Driver/Map/Map'
 
 export const CreateTrip = () => {
-  const [date, setDate] = useState("");
-  const [time, setTime] = useState("");
-  const [seats, setSeats] = useState("");
   const [trips, setTrips] = useState([]);
-
+  const [currentTrip, setCurrentTrip] = useState({trip_Id: 0});
   const [form] = Form.useForm();
+  const [isModalVisible, setIsModalVisible] = useState(false);
 
   const handleFinish = async (values) => {
     try {
       var dateValue = new Date(values.date).toISOString().split('T')[0];
       var timeValue = values.time.format('HH:mm');
-      console.log(dateValue, timeValue)
       const queryParams = {
         auth: {
           app_token: process.env.REACT_APP_TOKEN
@@ -31,7 +29,7 @@ export const CreateTrip = () => {
       }
       const YOUR_TOKEN = localStorage.getItem('token');
 
-      const response = await axios.post('http://localhost:3550/v1/trip/new', queryParams, {
+      const response = await axios.post('${process.env.REACT_APP_API_URL}/trip/new', queryParams, {
         headers: {
           'Authorization': `Bearer ${YOUR_TOKEN}`
         }
@@ -50,27 +48,6 @@ export const CreateTrip = () => {
     } catch (error) {
       console.error('Error:', error);
     }
-  };
-
-  // For handling date
-  const [selectedDate, setSelectedDate] = useState("");
-
-  const handleDateChange = (e, stringDate) => {
-    console.log(stringDate)
-    setSelectedDate(stringDate);
-  };
-
-  // For handling time input
-  const [selectedTime, setSelectedTime] = useState("");
-
-  const handleTimeChange = (e) => {
-  };
-
-  // For handling number of seats
-  const [selectedNumber, setSelectedNumber] = useState("");
-
-  const handleNumberChange = (e) => {
-    setSelectedNumber(e.target.value);
   };
   const [api, contextHolder] = notification.useNotification();
 
@@ -98,13 +75,12 @@ export const CreateTrip = () => {
       }
       const YOUR_TOKEN = localStorage.getItem('token');
 
-      axios.post('http://localhost:3550/v1/trip/search', queryParams, {
+      axios.post(`${process.env.REACT_APP_API_URL}/trip/search`, queryParams, {
         headers: {
           'Authorization': `Bearer ${YOUR_TOKEN}`
         }
       }).then(response => {
         // Handle the response as needed
-        console.log('Server response:', response.data);
         setTrips(response.data.data)
       })
 
@@ -116,6 +92,15 @@ export const CreateTrip = () => {
     }
   };
 
+  const showModal = (item) => {
+    setCurrentTrip(item);
+    setIsModalVisible(true);
+};
+
+const handleModalClose = () => {
+    setIsModalVisible(false);
+};
+
 
   useEffect(() => {
     loadCreatedTrips()
@@ -123,7 +108,7 @@ export const CreateTrip = () => {
 
   return (
     <>
-    <div className="CreateTrip-wrapper">
+    <div style={{marginTop: "3rem"}} className="CreateTrip-wrapper">
       <div className="create-trip-container">
         <Form
           form={form}
@@ -181,7 +166,7 @@ export const CreateTrip = () => {
         itemLayout="horizontal"
         dataSource={trips}
         renderItem={(item, index) => (
-          <List.Item actions={[<Button danger key={item.driver.id} type='text'>Driver's Route</Button>]}>
+          <List.Item actions={[<Button danger  onClick={() => showModal(item)} key={item.driver.id} type='text'>Driver's Route</Button>]}>
             <List.Item.Meta
               avatar={<Avatar src={`https://th.bing.com/th/id/OIP.AkKR5-4AJhHTNNDMp0NxvQAAAA?pid=ImgDet&rs=1`} />}
               title={item.driver.name}
@@ -193,6 +178,17 @@ export const CreateTrip = () => {
           </List.Item>
         )}
       />
+
+        <Modal
+          visible={isModalVisible}
+          width={800}
+          footer={[
+            <Button key={currentTrip.trip_Id + Math.random()}  onClick={handleModalClose}>Close Map</Button>
+          ]}
+          closable={false}
+        >
+         <Map tripId={currentTrip.id} />
+        </Modal>
     </>
   );
 };

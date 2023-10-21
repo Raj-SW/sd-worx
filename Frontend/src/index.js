@@ -32,7 +32,7 @@ const router = createBrowserRouter([
         element: <UserAuthPage/>,
       },
       {
-        path:"CreateTrip",
+        path:"trips",
         element: <CreateTrip/>
       }
     ],

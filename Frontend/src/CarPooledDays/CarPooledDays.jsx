@@ -27,12 +27,11 @@ function CarPooledDays() {
       }
 
       const YOUR_TOKEN = localStorage.getItem('token');
-      const response = await axios.post('http://localhost:3550/v1/booking/list', queryParams, {
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/booking/list`, queryParams, {
           headers: {
               'Authorization': `Bearer ${YOUR_TOKEN}`
           }
           });
-          console.log(response.data.data)
       setData(response.data.data)
       
       if (response.data.data) {
@@ -74,7 +73,7 @@ function CarPooledDays() {
                 <List.Item.Meta
                   avatar={<Avatar src={`https://th.bing.com/th/id/OIP.AkKR5-4AJhHTNNDMp0NxvQAAAA?pid=ImgDet&rs=1`} />}
                   title={item.title}
-                  description={<span dangerouslySetInnerHTML={{ __html: `Driver: ${item.driver.name} <br> Destination: Office<br>Pickup Time: ${item.estimated_pickup_time}` }} />}
+                  description={<span dangerouslySetInnerHTML={{ __html: `Driver: ${item.trip.driver} <br> Destination: Office` }} />}
                 />
               </List.Item>
             )}
