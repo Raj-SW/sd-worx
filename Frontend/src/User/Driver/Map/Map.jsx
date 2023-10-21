@@ -11,16 +11,6 @@ import {
 import { data } from 'azure-maps-control';
 
 
-
-
-  const points = [
-    { coordinates: [57.53446305014205, -20.220789655563557], name: 'John', pickupTime: "8:30 AM"  },
-    { coordinates: [57.52866531239014, -20.216823114003493], name: 'Alice', pickupTime: "8:30 AM"  },
-    { coordinates: [57.52866531239077, -20.216823114003483], name: 'ce', pickupTime: "8:30 AM"  },
-    { coordinates: [57.48959774078488, -20.243973593434518], name: 'Bob', pickupTime: "8:30 AM"  },
-  ];
-
-
 let pointId = 0;
 
 const option = {
@@ -28,7 +18,6 @@ const option = {
     authType: 'subscriptionKey',
     subscriptionKey: process.env.REACT_APP_AZURE_MAPS_KEY,
   },
-  center: ( points.length > 1 ? points[points.length/2].coordinates : points[0].coordinates),
   zoom: 13,
   view: 'Auto',
 };
@@ -52,34 +41,42 @@ const renderPoint = (point) => {
 
 
 
-const Map= () => {
+const Map= ({tripId}) => {
     const [routeCoordinates, setRouteCoordinates] = useState([]);
     const [renderKey, setRenderKey] = useState(Math.random());
     const [popupOptions, setPopupOptions] = useState({});
     const [popupProperties, setPopupProperties] = useState({});
+    const [points, setPoints] = useState([]);
 
     useEffect(() => {
-        const queryString = points.map(p => `${p.coordinates[1]},${p.coordinates[0]}`).join(':');
-        const params = {
-            'api-version': '1.0',
-            'subscription-key': option.authOptions.subscriptionKey,
-            'query': queryString,
-            'travelMode': 'car'
-        };
-    
-        axios.get(`https://atlas.microsoft.com/route/directions/json`, { params })
-            .then(response => {
-                const legs = response.data.routes[0].legs;
-                const points = legs.flatMap(leg => leg.points);
-                const routeCoords = points.map(point => [point.longitude, point.latitude]);
-                setRouteCoordinates(routeCoords);
-                setRenderKey(Math.random());
-            })
-            .catch(error => {
-                console.error('Error fetching route details:', error);
+      const queryParams = {
+        auth: {
+            app_token: process.env.REACT_APP_TOKEN
+        },
+        data: {
+            trip_id: tripId
+        }
+    }
+      const YOUR_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aXRsZSI6ImFjY2VzcyIsImlkIjoiNjUzMzAzOTM4MjZiNzA4MGE0ODllZGMzIiwiZW1haWwiOiJjaGF2aUBwYXgxLmNvbSIsImlhdCI6MTY5Nzg0MjU4OSwiZXhwIjoxNjk3OTI4OTg5fQ.NSx5cD5XqUhvMtazC9oaUwgLRtiqOQt8V0ltevRP4NA";
+       axios.post('http://localhost:3550/v1/trip/pickups', queryParams, {
+          headers: {
+              'Authorization': `Bearer ${YOUR_TOKEN}`
+          }
+          }).then (response => {
+            console.log(response.data.data)
+            setRouteCoordinates(response.data.data.coordinates)
+            setRenderKey(Math.random());
+            const pts = response.data.data.users.map((p) => {
+              return {
+                coordinates: [p.coordinates.long, p.coordinates.lat],
+               name: p.name,
+              pickupTime: p.pickup_time
+              }
             });
-            
-    }, []);
+            setPoints(pts);
+            console.log(pts)
+          });
+    }, [tripId]);
 
   return (
     <div style={wrapperStyles.map}>

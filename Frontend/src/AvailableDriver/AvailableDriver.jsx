@@ -6,6 +6,7 @@ import axios from 'axios';
 function AvailableDrivers() {
     const [dateSelected, setDateSelected] = useState(false);
     const [isModalVisible, setIsModalVisible] = useState(false);
+    const [currentDriver, setCurrentDriver] = useState({tripId: 0});
     const [data, setData] = useState([]);
     const [shareCarModalVisible, setShareCarModalVisible] = useState(false);
 
@@ -34,7 +35,8 @@ function AvailableDrivers() {
         }
     };
 
-    const showModal = (item) => {  
+    const showModal = (item) => {
+        setCurrentDriver(item);
         setIsModalVisible(true);
     };
 
@@ -88,7 +90,7 @@ function AvailableDrivers() {
             itemLayout="horizontal"
             dataSource={data}
             renderItem={(item, index) => (
-              <List.Item actions={[ <Button danger  key="list-loadmore-edit" type='text' onClick={() => showModal(item)}>Driver's Route</Button>,  <Button ghost type='primary' key="list-loadmore-more" onClick={showShareCarModal}>Share Car</Button> ]}>
+              <List.Item actions={[ <Button danger  key={item.driver.id} type='text' onClick={() => showModal(item)}>Driver's Route</Button>,  <Button ghost type='primary' key="list-loadmore-more" onClick={showShareCarModal}>Share Car</Button> ]}>
                 <List.Item.Meta
                   avatar={<Avatar src={`https://th.bing.com/th/id/OIP.AkKR5-4AJhHTNNDMp0NxvQAAAA?pid=ImgDet&rs=1`} />}
                   title={item.driver.name}
@@ -108,7 +110,7 @@ function AvailableDrivers() {
           ]}
           closable={false}
         >
-         <Map />
+         <Map tripId={currentDriver.trip_id} />
         </Modal>
 
         <Modal 
