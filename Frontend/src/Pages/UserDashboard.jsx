@@ -12,47 +12,20 @@ export const CreateTrip = () => {
 
   const [form] = Form.useForm();
 
-  const handleFinish = (values) => {
-    console.log('Success:', values);
-  };
-
-  // For handling date
-  const [selectedDate, setSelectedDate] = useState("");
-
-  const handleDateChange = (e) => {
-    setSelectedDate(e.target.value);
-  };
-
-  // For handling time input
-  const [selectedTime, setSelectedTime] = useState("");
-
-  const handleTimeChange = (e) => {
-    setSelectedTime(e.target.value);
-  };
-
-  // For handling number of seats
-  const [selectedNumber, setSelectedNumber] = useState("");
-
-  const handleNumberChange = (e) => {
-    setSelectedNumber(e.target.value);
-  };
-  const [api, contextHolder] = notification.useNotification();
-
-
-  const handleCreateTrip = async (e) => {
-    e.preventDefault();
-
+  const handleFinish = async (values) => {
     try {
-
+      var dateValue = new Date(values.date).toISOString().split('T')[0];
+      var timeValue = values.time.format('HH:mm');
+      console.log(dateValue, timeValue)
       const queryParams = {
         auth: {
           app_token: process.env.REACT_APP_TOKEN
         },
         data: {
           driver: JSON.parse(atob(localStorage.getItem('token').split('.')[1])).id,
-          date: selectedDate,
-          departure_time: selectedTime,
-          available_seats: selectedNumber,
+          date: dateValue,
+          departure_time: timeValue,
+          available_seats: values.seats,
           available_for_carpool: "true"
         }
       }
@@ -64,9 +37,10 @@ export const CreateTrip = () => {
         }
       });
 
-
-      // Handle the response as needed
-      console.log('Server response:', response.data);
+      if(response.status == 200) {
+        form.resetFields();
+        loadCreatedTrips(); 
+      }
 
       notification.success({
         message: 'Success',
@@ -77,6 +51,28 @@ export const CreateTrip = () => {
       console.error('Error:', error);
     }
   };
+
+  // For handling date
+  const [selectedDate, setSelectedDate] = useState("");
+
+  const handleDateChange = (e, stringDate) => {
+    console.log(stringDate)
+    setSelectedDate(stringDate);
+  };
+
+  // For handling time input
+  const [selectedTime, setSelectedTime] = useState("");
+
+  const handleTimeChange = (e) => {
+  };
+
+  // For handling number of seats
+  const [selectedNumber, setSelectedNumber] = useState("");
+
+  const handleNumberChange = (e) => {
+    setSelectedNumber(e.target.value);
+  };
+  const [api, contextHolder] = notification.useNotification();
 
   const openNotification = () => {
     api.open({
@@ -141,7 +137,7 @@ export const CreateTrip = () => {
                 name="date"
                 rules={[{ required: true, message: 'Please select a date!' }]}
               >
-                <DatePicker onChange={handleDateChange} />
+                <DatePicker  />
               </Form.Item>
             </Col>
             <Col xs={24} sm={6}>
@@ -150,7 +146,7 @@ export const CreateTrip = () => {
                 name="time"
                 rules={[{ required: true, message: 'Please select a time!' }]}
               >
-                <TimePicker format="HH:mm" onChange={handleTimeChange} />
+                <TimePicker format="HH:mm"  />
               </Form.Item>
             </Col>
             <Col xs={24} sm={6}>
@@ -159,10 +155,9 @@ export const CreateTrip = () => {
                 name="seats"
                 rules={[
                   { required: true, message: 'Please enter the number of seats!' },
-                  { type: 'number', min: 1, message: 'Seats should be at least 1!' }
                 ]}
               >
-                <Input type="number" onChange={handleNumberChange} />
+                <Input type="number" />
               </Form.Item>
             </Col>
             <Col xs={24} sm={6}>
@@ -186,12 +181,12 @@ export const CreateTrip = () => {
         itemLayout="horizontal"
         dataSource={trips}
         renderItem={(item, index) => (
-          <List.Item actions={[<Button danger key={item.driver.id} type='text'>Driver's Route</Button>, <Button ghost type='primary' key="list-loadmore-more" >Share Car</Button>]}>
+          <List.Item actions={[<Button danger key={item.driver.id} type='text'>Driver's Route</Button>]}>
             <List.Item.Meta
               avatar={<Avatar src={`https://th.bing.com/th/id/OIP.AkKR5-4AJhHTNNDMp0NxvQAAAA?pid=ImgDet&rs=1`} />}
               title={item.driver.name}
               description={<span dangerouslySetInnerHTML={{
-                __html: `Address: ${item.driver.address} <br>Drive Time on Road: ${item.departure_time} <br> Pickup Time: ${item.estimated_pickup_time} <br> Seats Left: ${item.available_seats
+                __html: `Address: ${item.driver.address} <br>Drive Time on Road: ${item.departure_time} <br> Passengers: ${item.passengers} <br> Seats Left: ${item.available_seats
                   }`
               }} />}
             />
