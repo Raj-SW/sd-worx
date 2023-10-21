@@ -34,10 +34,9 @@ module.exports = {
                 if (inputs.data.date) {
                     bookingList = await Booking.find({
                         user: req.session.user_id
-                    }).populate("trip");
+                    }).populate("trip").populate("driver");
 
                     for (const booking of bookingList) {
-                        console.log(booking)
                         if (booking.trip.date == inputs.data.date) {
                             returnList.push(booking);
                         }

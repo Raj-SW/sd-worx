@@ -1,9 +1,11 @@
 module.exports = {
-    friendlyName: "Get user info",
-    description: "Get user info",
+    friendlyName: "List Trips for a driver",
+    description: "List Trips for a driver",
     inputs: {
         data: {
-            type: {}
+            type: {},
+            example: {
+            }
         }
     },
     exits: {
@@ -20,25 +22,29 @@ module.exports = {
             searchCriteria = {};
 
         try {
-            if (req.headers.authorization) {
+            if (inputs.data) {
 
-                userList = await User.find({ id: req.session.user_id });
-                delete userList[0].password;
-
-                tripList = await Trip.find({ driver: req.session.user_id });
-                userList[0].driver = false;
+                tripList = await Trip.find({
+                    driver: inputs.data.driver_id
+                }).populate("driver");
 
                 if (tripList.length > 0) {
-                    userList[0].driver = true;
-                }
+                    bookingList = await Booking.find({
+                        trip: tripList[0].id
+                    }).populate("user");
 
-                if (inputs.data.include_cars) {
-                    userList[0].cars = carList;
-                }
+                    tripList[0].passengers = bookingList.map(booking => booking.user.name).join(", ");
 
-                return exits.success({
-                    data: userList[0]
-                })
+                    delete tripList[0].driver.password
+
+                    return exits.success({
+                        data: tripList
+                    })
+                } else {
+                    return exits.success({
+                        data: tripList
+                    })
+                }
 
             } else {
                 error.push(await sails.helpers.utility.error.getAppError("general.invalid_parameters"));

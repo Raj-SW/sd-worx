@@ -1,17 +1,27 @@
 import React, { useState } from 'react';
-import { Avatar, List, Skeleton, DatePicker, Space, Modal, Button, notification } from 'antd';
-import Map from '../User/Driver/Map/Map'
+import { Avatar, List, Skeleton, DatePicker, Space, Modal, Button, notification, Spin } from 'antd'; // Import Spin
+import Map from '../User/Driver/Map/Map';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 function AvailableDrivers() {
     const [dateSelected, setDateSelected] = useState(false);
     const [isModalVisible, setIsModalVisible] = useState(false);
-    const [currentDriver, setCurrentDriver] = useState({tripId: 0});
+    const [currentDriver, setCurrentDriver] = useState({trip_Id: 0});
     const [data, setData] = useState([]);
     const [shareCarModalVisible, setShareCarModalVisible] = useState(false);
+    const navigate = useNavigate();
+    const [isLoggedIn, setLoggedIn] = useState(!!localStorage.getItem('token'));
+    const [loading, setLoading] = useState(false); // New loading state
 
+    if (!isLoggedIn) {
+      navigate("/auth");
+    }
+    
     const [api, contextHolder] = notification.useNotification();
-      const onChange = async (date, dateString) => {
+
+    const onChange = async (date, dateString) => {
+        setLoading(true); // Set loading to true before fetching
         const queryParams = {
             auth: {
                 app_token: process.env.REACT_APP_TOKEN
@@ -21,15 +31,16 @@ function AvailableDrivers() {
             }
         }
 
-        const YOUR_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aXRsZSI6ImFjY2VzcyIsImlkIjoiNjUzMzAzOTM4MjZiNzA4MGE0ODllZGMzIiwiZW1haWwiOiJjaGF2aUBwYXgxLmNvbSIsImlhdCI6MTY5Nzg0MjU4OSwiZXhwIjoxNjk3OTI4OTg5fQ.NSx5cD5XqUhvMtazC9oaUwgLRtiqOQt8V0ltevRP4NA";
-        const response = await axios.post('http://localhost:3550/v1/trip/list', queryParams, {
+        const YOUR_TOKEN = localStorage.getItem('token');
+        const response = await axios.post(`${process.env.REACT_APP_API_URL}/trip/list`, queryParams, {
             headers: {
                 'Authorization': `Bearer ${YOUR_TOKEN}`
             }
-            });
-            console.log(response.data.data)
-        setData(response.data.data)
+        });
         
+        setData(response.data.data);
+        setLoading(false); // Set loading to false after fetching
+
         if (response.data.data) {
             setDateSelected(true);
         }
@@ -44,7 +55,8 @@ function AvailableDrivers() {
         setIsModalVisible(false);
     };
 
-    const showShareCarModal = () => {  
+    const showShareCarModal = (item) => {  
+      setCurrentDriver(item)
         setShareCarModalVisible(true);
     };
 
@@ -52,9 +64,28 @@ function AvailableDrivers() {
         setShareCarModalVisible(false);
     };
 
-    const handleShareCarModalOkay = () => {
-        openNotification();
-        setShareCarModalVisible(false);
+    const handleShareCarModalOkay = async () => {
+      const queryParams = {
+        auth: {
+            app_token: process.env.REACT_APP_TOKEN
+        },
+        data: {
+            trip: currentDriver.trip_id
+        }
+    }
+
+    const YOUR_TOKEN = localStorage.getItem('token');
+    const response = await axios.post(`${process.env.REACT_APP_API_URL}/booking/new`, queryParams, {
+        headers: {
+            'Authorization': `Bearer ${YOUR_TOKEN}`
+        }
+        });
+
+        if (response.status == 200) {
+          openNotification();
+          setShareCarModalVisible(false);
+        }
+       
     };
 
     const centerStyle = {
@@ -74,39 +105,41 @@ function AvailableDrivers() {
       };
 
     return (
-        <>
-        {contextHolder}
-        <div style={centerStyle}>
-            <DatePicker onChange={onChange} />
-        </div>
-        {!dateSelected && <p style={{textAlign: "center", marginTop: "8rem"}}>Please select date you wish to carpools to view available drivers.</p>}
+      <>
+      {contextHolder}
+      <div style={{margin: "1rem 1rem 2rem 0rem", display: "flex", justifyContent: "center"}}>
+          <DatePicker onChange={onChange} />
+      </div>
 
-        {dateSelected && (
-            <List 
-            style={{
-                width: "900px",
-                margin: "auto"
-            }}
-            itemLayout="horizontal"
-            dataSource={data}
-            renderItem={(item, index) => (
-              <List.Item actions={[ <Button danger  key={item.driver.id} type='text' onClick={() => showModal(item)}>Driver's Route</Button>,  <Button ghost type='primary' key="list-loadmore-more" onClick={showShareCarModal}>Share Car</Button> ]}>
-                <List.Item.Meta
-                  avatar={<Avatar src={`https://th.bing.com/th/id/OIP.AkKR5-4AJhHTNNDMp0NxvQAAAA?pid=ImgDet&rs=1`} />}
-                  title={item.driver.name}
-                  description={<span dangerouslySetInnerHTML={{ __html: `Address: ${item.driver.address} <br>Drive Time on Road: ${item.departure_time} <br> Pickup Time: ${item.estimated_pickup_time} <br> Seats Left: ${item.available_seats
-                  }` }} />}
-                />
-              </List.Item>
-            )}
+      {loading && <Spin style={{display: "block", margin: "2rem auto"}} />} {/* Display spinner if loading */}
+
+      {!dateSelected && !loading && <p style={{textAlign: "center", marginTop: "8rem"}}>Please select date you wish to carpools to view available drivers.</p>}
+
+      {dateSelected && (
+          <List 
+              style={{
+                  width: "900px",
+                  margin: "auto"
+              }}
+              itemLayout="horizontal"
+              dataSource={data}
+              renderItem={(item, index) => (
+                  <List.Item actions={[ <Button danger key={item.driver.id} type='text' onClick={() => showModal(item)}>Driver's Route</Button>,  <Button ghost type='primary' key="list-loadmore-more" onClick={() =>showShareCarModal(item)}>Share Car</Button> ]}>
+                      <List.Item.Meta
+                          avatar={<Avatar src={`https://th.bing.com/th/id/OIP.AkKR5-4AJhHTNNDMp0NxvQAAAA?pid=ImgDet&rs=1`} />}
+                          title={item.driver.name}
+                          description={<span dangerouslySetInnerHTML={{ __html: `Address: ${item.driver.address} <br>Drive Time on Road: ${item.departure_time} <br> Pickup Time: ${item.estimated_pickup_time} <br> Seats Left: ${item.available_seats}` }} />}
+                      />
+                  </List.Item>
+              )}
           />
-        )}
+      )}
 
         <Modal
           visible={isModalVisible}
           width={800}
           footer={[
-            <Button defaultColor='#f8ad07'  onClick={handleModalClose}>Close Map</Button>
+            <Button key={currentDriver.trip_Id + Math.random()}  onClick={handleModalClose}>Close Map</Button>
           ]}
           closable={false}
         >

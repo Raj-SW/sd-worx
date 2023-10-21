@@ -2,11 +2,19 @@ import React, { useState } from 'react';
 import { Avatar, List, DatePicker, Modal, Button, notification } from 'antd';
 import Map from '../User/Driver/Map/Map'
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 function CarPooledDays() {
   const [dateSelected, setDateSelected] = useState(false);
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [data, setData] = useState([]);
+    const [isLoggedIn, setLoggedIn] = useState(!!localStorage.getItem('token'));
+
+    const navigate = useNavigate();
+
+    if (!isLoggedIn) {
+      navigate("/auth")
+    }
 
     const onChange = async (date, dateString) => {
       const queryParams = {
@@ -18,13 +26,12 @@ function CarPooledDays() {
           }
       }
 
-      const YOUR_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aXRsZSI6ImFjY2VzcyIsImlkIjoiNjUzMzAzOTM4MjZiNzA4MGE0ODllZGMzIiwiZW1haWwiOiJjaGF2aUBwYXgxLmNvbSIsImlhdCI6MTY5Nzg0MjU4OSwiZXhwIjoxNjk3OTI4OTg5fQ.NSx5cD5XqUhvMtazC9oaUwgLRtiqOQt8V0ltevRP4NA";
-      const response = await axios.post('http://localhost:3550/v1/booking/list', queryParams, {
+      const YOUR_TOKEN = localStorage.getItem('token');
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/booking/list`, queryParams, {
           headers: {
               'Authorization': `Bearer ${YOUR_TOKEN}`
           }
           });
-          console.log(response.data.data)
       setData(response.data.data)
       
       if (response.data.data) {
@@ -66,7 +73,7 @@ function CarPooledDays() {
                 <List.Item.Meta
                   avatar={<Avatar src={`https://th.bing.com/th/id/OIP.AkKR5-4AJhHTNNDMp0NxvQAAAA?pid=ImgDet&rs=1`} />}
                   title={item.title}
-                  description={<span dangerouslySetInnerHTML={{ __html: `Driver: ${item.driver.name} <br> Destination: Office<br>Pickup Time: ${item.estimated_pickup_time}` }} />}
+                  description={<span dangerouslySetInnerHTML={{ __html: `Driver: ${item.trip.driver} <br> Destination: Office` }} />}
                 />
               </List.Item>
             )}

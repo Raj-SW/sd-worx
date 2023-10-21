@@ -69,7 +69,6 @@ module.exports = {
 
                 await axios.get("https://atlas.microsoft.com/route/directions/json", { params })
                     .then(response => {
-                        console.log(response.data);
                         legs = response.data.routes[0].legs;
                         points = legs.flatMap(leg => leg.points);
                         routeCoords = points.map(point => [point.longitude, point.latitude]);
