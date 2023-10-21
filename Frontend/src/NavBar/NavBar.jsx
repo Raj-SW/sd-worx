@@ -2,9 +2,7 @@ import "./NavBar.css";
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "../assets/img/sdworx_logo.png";
-import { UserAuthPage } from "../Pages/UserAuthPage";
-import { HashLink } from "react-router-hash-link";
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -45,7 +43,7 @@ export const NavBar = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link
-                href="#home"
+                href="/home"
                 className={
                   activeLink === "home" ? "active navbar-link" : "navbar-link"
                 }
@@ -76,7 +74,7 @@ export const NavBar = () => {
             </Nav>
 
             <span className="navbar-text">
-              <Nav.Link as={Link} to={"/UserAuthPage"}>
+              <Nav.Link as={Link} to={"/auth"}>
                 <button className="vvd">
                   <span>Sign Up</span>
                 </button>
@@ -85,12 +83,6 @@ export const NavBar = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
-      <Routes>
-        <Route path="/UserAuthPage" element={<UserAuthPage/>} />
-        <Route path="/UserAuthPage" element={<UserAuthPage/>} />
-
-      </Routes>
     </div>
   );
 };
