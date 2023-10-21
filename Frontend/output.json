@@ -1,0 +1,5924 @@
+[
+    {
+        "EMPID": {
+            "formula": "ROW()+10000",
+            "result": 10002
+        },
+        "TeamID": {
+            "formula": "RANDBETWEEN(1, 20)",
+            "result": 18
+        },
+        "EMPNAME": "John, Smith",
+        "AD1": "PHOENIX",
+        "AD2": "PETIT CAMP",
+        "AD3": "PETIT CAMP",
+        "latitude": 48.7688,
+        "longitude": -3.42632
+    },
+    {
+        "EMPID": {
+            "formula": "ROW()+10000",
+            "result": 10003,
+            "ref": "A3:A66",
+            "shareType": "shared"
+        },
+        "TeamID": {
+            "formula": "RANDBETWEEN(1, 20)",
+            "result": 1,
+            "ref": "B3:B66",
+            "shareType": "shared"
+        },
+        "EMPNAME": "Emily, Johnson",
+        "AD1": "ALLEE TAMARIN",
+        "AD2": "BAMBOUS",
+        "AD3": "BAMBOUS",
+        "latitude": -20.26014,
+        "longitude": 57.41252
+    },
+    {
+        "EMPID": {
+            "result": 10004,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 18,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Michael, Williams",
+        "AD1": "63, DESFORGES STREET",
+        "AD2": "PORT LOUIS",
+        "AD3": "PORT LOUIS",
+        "latitude": -26.18651,
+        "longitude": 27.8016
+    },
+    {
+        "EMPID": {
+            "result": 10005,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 12,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Sarah, Brown",
+        "AD1": "LA CLEMENCE",
+        "AD2": "RIVIERE DU REMPART",
+        "AD3": "RIVIERE DU REMPART",
+        "latitude": -20.10848,
+        "longitude": 57.69236
+    },
+    {
+        "EMPID": {
+            "result": 10006,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 3,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "David, Jones",
+        "AD1": "ROYAL ROAD BANANES",
+        "AD2": "CLUNY",
+        "AD3": "BANANES",
+        "latitude": -20.36248,
+        "longitude": 57.60589
+    },
+    {
+        "EMPID": {
+            "result": 10007,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 11,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Laura, Davis",
+        "AD1": "AVENUE LUCHMUN",
+        "AD2": "PALMA",
+        "AD3": "QUATRE BORNES",
+        "latitude": -20.27873,
+        "longitude": 57.45907
+    },
+    {
+        "EMPID": {
+            "result": 10008,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 11,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "William, Garcia",
+        "AD1": "3B, New Heritage",
+        "AD2": "Sir Virgile Naz",
+        "AD3": "QUATRE BORNES",
+        "latitude": -20.25909,
+        "longitude": 57.47542
+    },
+    {
+        "EMPID": {
+            "result": 10009,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 15,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Karen, Wilson",
+        "AD1": "KULPOO LANE",
+        "AD2": "ROSE BELLE",
+        "AD3": "ROSE BELLE",
+        "latitude": -20.40282,
+        "longitude": 57.60376
+    },
+    {
+        "EMPID": {
+            "result": 10010,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 5,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Robert, Anderson",
+        "AD1": "BELVEDERE ROAD",
+        "AD2": "CONGOMAH",
+        "AD3": "D'EPINAY",
+        "latitude": -20.13544,
+        "longitude": 57.60076
+    },
+    {
+        "EMPID": {
+            "result": 10011,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 3,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Emma, Thomas",
+        "AD1": "VICTORIA ROAD",
+        "AD2": "TROU D'EAU DOUCE-FLACQ",
+        "AD3": "TROU D'EAU DOUCE",
+        "latitude": -20.23542,
+        "longitude": 57.78681
+    },
+    {
+        "EMPID": {
+            "result": 10012,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 13,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "James, Martinez",
+        "AD1": "17 BEAUX MANGUIERS,",
+        "AD2": "RUE DU VIEUX MOULIN, PEREYBERE",
+        "AD3": "GRAND BAY",
+        "latitude": 46.2057,
+        "longitude": 6.25179
+    },
+    {
+        "EMPID": {
+            "result": 10013,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 18,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Maria, Taylor",
+        "AD1": "ROYAL ROAD",
+        "AD2": "BALANCE",
+        "AD3": "SURINAM",
+        "latitude": 51.48819,
+        "longitude": -2.49064
+    },
+    {
+        "EMPID": {
+            "result": 10014,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 11,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Charles, Adams",
+        "AD1": "3 MARGUERITES",
+        "AD2": "MORC MONTREAL",
+        "AD3": "COROMANDEL",
+        "latitude": 45.47294,
+        "longitude": -73.58147
+    },
+    {
+        "EMPID": {
+            "result": 10015,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 15,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Susan, Nelson",
+        "AD1": "34 PETIT CAMP",
+        "AD2": "PHOENIX",
+        "AD3": "PETIT CAMP",
+        "latitude": 48.7688,
+        "longitude": -3.42632
+    },
+    {
+        "EMPID": {
+            "result": 10016,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 8,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Christopher, Hall",
+        "AD1": "CHANTENEY",
+        "AD2": "MOKA",
+        "AD3": "PETIT VERGER",
+        "latitude": -20.21855,
+        "longitude": 57.52606
+    },
+    {
+        "EMPID": {
+            "result": 10017,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 11,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Lisa, Scott",
+        "AD1": "GUNPATH LANE",
+        "AD2": "MAHEBOURG",
+        "AD3": "MAHEBOURG",
+        "latitude": -20.41193,
+        "longitude": 57.70338
+    },
+    {
+        "EMPID": {
+            "result": 10018,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 4,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Daniel, King",
+        "AD1": "68, CAPITAINE PONTRE STREET",
+        "AD2": "SAINT CROIX",
+        "AD3": "PORT LOUIS",
+        "latitude": -20.14817,
+        "longitude": 57.52812
+    },
+    {
+        "EMPID": {
+            "result": 10019,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 8,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Nancy, Wright",
+        "AD1": "MORCELLEMENT ORCHIDEE",
+        "AD2": "ROSE BELLE",
+        "AD3": "ROSE BELLE",
+        "latitude": -20.40282,
+        "longitude": 57.60376
+    },
+    {
+        "EMPID": {
+            "result": 10020,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 3,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Paul, Hill",
+        "AD1": "MONTEE S",
+        "AD2": "PETITE RIVIERE",
+        "AD3": "PORT LOUIS",
+        "latitude": 46.6648,
+        "longitude": -72.49815
+    },
+    {
+        "EMPID": {
+            "result": 10021,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 5,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Linda, Green",
+        "AD1": "THOMPSON ROAD",
+        "AD2": "VACOAS",
+        "AD3": "VACOAS",
+        "latitude": -20.30528,
+        "longitude": 57.48876
+    },
+    {
+        "EMPID": {
+            "result": 10022,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 6,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Mark, Baker",
+        "AD1": "41 ENGRAIS ROAD",
+        "AD2": "VACOAS",
+        "AD3": "VACOAS",
+        "latitude": -20.31295,
+        "longitude": 57.4902
+    },
+    {
+        "EMPID": {
+            "result": 10023,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 2,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Jessica, Carter",
+        "AD1": "BABOOLALL LANE",
+        "AD2": "MOKA",
+        "AD3": "MOKA",
+        "latitude": -20.22467,
+        "longitude": 57.50721
+    },
+    {
+        "EMPID": {
+            "result": 10024,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 6,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Joseph, Mitchell",
+        "AD1": "CLOSEL ROAD",
+        "AD2": "PHOENIX",
+        "AD3": "PHOENIX",
+        "latitude": -20.28596,
+        "longitude": 57.49491
+    },
+    {
+        "EMPID": {
+            "result": 10025,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 9,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Patricia, Allen",
+        "AD1": "84 SSR AVENUE",
+        "AD2": "QUATRE BORNES",
+        "AD3": "QUATRE BORNES",
+        "latitude": 45.09373,
+        "longitude": 0.46802
+    },
+    {
+        "EMPID": {
+            "result": 10026,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 17,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Richard, Phillips",
+        "AD1": "NO. 9 MORC ADAM",
+        "AD2": "EAU COULEE",
+        "AD3": "EAU COULEE",
+        "latitude": 16.31541,
+        "longitude": -61.43923
+    },
+    {
+        "EMPID": {
+            "result": 10027,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 9,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Barbara, Morris",
+        "AD1": "91, AVENUE DRAPERS",
+        "AD2": "BELLE ROSE",
+        "AD3": "BELLE ROSE",
+        "latitude": -20.25965,
+        "longitude": 57.47943
+    },
+    {
+        "EMPID": {
+            "result": 10028,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 1,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Steven, Rogers",
+        "AD1": "L'AGREMENT",
+        "AD2": "SAINT PIERRE",
+        "AD3": "SAINT PIERRE",
+        "latitude": 46.03082,
+        "longitude": -0.4328
+    },
+    {
+        "EMPID": {
+            "result": 10029,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 18,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Mary, Murphy",
+        "AD1": "ROYAL ROAD",
+        "AD2": "CHEMIN GRENIER",
+        "AD3": "CHEMIN GRENIER",
+        "latitude": 47.06744,
+        "longitude": -67.7565
+    },
+    {
+        "EMPID": {
+            "result": 10030,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 7,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Thomas, Reed",
+        "AD1": "BOUNDARY ROAD",
+        "AD2": "MORC RIPAILLE",
+        "AD3": "CALEBASSES - PAMPLEMOUSSES",
+        "latitude": -20.11018,
+        "longitude": 57.55164
+    },
+    {
+        "EMPID": {
+            "result": 10031,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 5,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Karen, Cook",
+        "AD1": "ROYAL ROAD",
+        "AD2": "TYACK",
+        "AD3": "RIVIERE DES ANGUILLES",
+        "latitude": -20.4896,
+        "longitude": 57.55728
+    },
+    {
+        "EMPID": {
+            "result": 10032,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 11,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Andrew, Lewis",
+        "AD1": "42, AIL DORE STREET",
+        "AD2": "PORT LOUIS",
+        "AD3": "PORT LOUIS",
+        "latitude": -20.14354,
+        "longitude": 57.52085
+    },
+    {
+        "EMPID": {
+            "result": 10033,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 5,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Carol, Long",
+        "AD1": "SIR NAPIER BROOM STREET",
+        "AD2": "BEAU BASSIN",
+        "AD3": "BEAU BASSIN",
+        "latitude": -20.22734,
+        "longitude": 57.466
+    },
+    {
+        "EMPID": {
+            "result": 10034,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 14,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Anthony, Perez",
+        "AD1": "RESERVOIR ROAD",
+        "AD2": "GOODLANDS",
+        "AD3": "GOODLANDS",
+        "latitude": -20.03796,
+        "longitude": 57.64217
+    },
+    {
+        "EMPID": {
+            "result": 10035,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 11,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Margaret, Jenkins",
+        "AD1": "MORCELLEMENT RAFFRAY",
+        "AD2": "LE HOCHET",
+        "AD3": "TERRE ROUGE",
+        "latitude": -20.13348,
+        "longitude": 57.51835
+    },
+    {
+        "EMPID": {
+            "result": 10036,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 3,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Brian, Richardson",
+        "AD1": "REUNION ROAD",
+        "AD2": "LA VANILLE - VACOAS",
+        "AD3": "VACOAS",
+        "latitude": -20.31429,
+        "longitude": 57.49343
+    },
+    {
+        "EMPID": {
+            "result": 10037,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 7,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Michelle, Price",
+        "AD1": "NEW MOSQUE ROAD",
+        "AD2": "CHEMIN GRENIER",
+        "AD3": "CHEMIN GRENIER",
+        "latitude": -20.49597,
+        "longitude": 57.47875
+    },
+    {
+        "EMPID": {
+            "result": 10038,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 13,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Edward, Russell",
+        "AD1": "VINGTA NO.2",
+        "AD2": "VACOAS",
+        "AD3": "VACOAS",
+        "latitude": -20.29559,
+        "longitude": 57.48063
+    },
+    {
+        "EMPID": {
+            "result": 10039,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 4,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Jennifer, Foster",
+        "AD1": "SHIVALA LANE, MORC RAMKARRAN",
+        "AD2": "ROSE BELLE",
+        "AD3": "ROSE BELLE",
+        "latitude": -20.39983,
+        "longitude": 57.60203
+    },
+    {
+        "EMPID": {
+            "result": 10040,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 6,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Timothy, Howard",
+        "AD1": "SEWRAZ ROAD",
+        "AD2": "9EME MILLE TRIOLET",
+        "AD3": "TRIOLET",
+        "latitude": -20.04875,
+        "longitude": 57.55104
+    },
+    {
+        "EMPID": {
+            "result": 10041,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 6,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Sandra, Stewart",
+        "AD1": "46A DUPONT STREET",
+        "AD2": "BEAU BASSIN",
+        "AD3": "BEAU BASSIN",
+        "latitude": -20.22148,
+        "longitude": 57.47204
+    },
+    {
+        "EMPID": {
+            "result": 10042,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 5,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Ronald, Bell",
+        "AD1": "HOLLYROOD NO 1",
+        "AD2": "VACOAS",
+        "AD3": "VACOAS",
+        "latitude": -20.29299,
+        "longitude": 57.48041
+    },
+    {
+        "EMPID": {
+            "result": 10043,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 16,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Angela, Torres",
+        "AD1": "SCHOOL LANE",
+        "AD2": "GLEN PARK - VACOAS",
+        "AD3": "VACOAS",
+        "latitude": -20.32834,
+        "longitude": 57.48502
+    },
+    {
+        "EMPID": {
+            "result": 10044,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 12,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Matthew, Bailey",
+        "AD1": "AVENUE SOOBIAH",
+        "AD2": "REDUIT",
+        "AD3": "REDUIT",
+        "latitude": -20.23081,
+        "longitude": 57.49849
+    },
+    {
+        "EMPID": {
+            "result": 10045,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 4,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Julie, Wood",
+        "AD1": "5 ARPENTS",
+        "AD2": "PHOENIX",
+        "AD3": "PHOENIX",
+        "latitude": 30.49186,
+        "longitude": -90.466
+    },
+    {
+        "EMPID": {
+            "result": 10046,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 4,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Donald, Brooks",
+        "AD1": "MORC RAFFRAY",
+        "AD2": "ST PIERRE",
+        "AD3": "HELVETIA",
+        "latitude": -20.22644,
+        "longitude": 57.54316
+    },
+    {
+        "EMPID": {
+            "result": 10047,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 17,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Elizabeth, Bennett",
+        "AD1": "19, PANORAMA LANE",
+        "AD2": "MORCELLEMENT HERMITAGE",
+        "AD3": "COROMANDEL",
+        "latitude": 34.83022,
+        "longitude": -111.76968
+    },
+    {
+        "EMPID": {
+            "result": 10048,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 8,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Kevin, Cole",
+        "AD1": "KALIMAYE ROAD",
+        "AD2": "GOKOOLA",
+        "AD3": "GOKOOLA",
+        "latitude": -20.10661,
+        "longitude": 57.65525
+    },
+    {
+        "EMPID": {
+            "result": 10049,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 6,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Brenda, Jenkins",
+        "AD1": "DERBY LANE",
+        "AD2": "PAMPLEMOUSSES",
+        "AD3": "PAMPLEMOUSSES",
+        "latitude": -20.10338,
+        "longitude": 57.57842
+    },
+    {
+        "EMPID": {
+            "result": 10050,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 11,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Gary, Hughes",
+        "AD1": "CATHAN LANE",
+        "AD2": "CAMP GOOLBAR",
+        "AD3": "CHEMIN GRENIER",
+        "latitude": -20.48981,
+        "longitude": 57.46978
+    },
+    {
+        "EMPID": {
+            "result": 10051,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 8,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Rebecca, James",
+        "AD1": "80 BOULEVARD PITOT",
+        "AD2": "PORT LOUIS",
+        "AD3": "PORT LOUIS",
+        "latitude": -20.16691,
+        "longitude": 57.51949
+    },
+    {
+        "EMPID": {
+            "result": 10052,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 18,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Larry, Sims",
+        "AD1": "TAGORE ROAD",
+        "AD2": "FOND DU SAC",
+        "AD3": "FOND DU SAC",
+        "latitude": -20.04506,
+        "longitude": 57.58664
+    },
+    {
+        "EMPID": {
+            "result": 10053,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 6,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Cynthia, Griffin",
+        "AD1": "HOLYROOD NO. 1",
+        "AD2": "VACOAS",
+        "AD3": "VACOAS",
+        "latitude": -20.31442,
+        "longitude": 57.47738
+    },
+    {
+        "EMPID": {
+            "result": 10054,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 2,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Kenneth, Crawford",
+        "AD1": "HERMITAGE",
+        "AD2": "PHOENIX",
+        "AD3": "HERMITAGE",
+        "latitude": 36.21235,
+        "longitude": -86.59374
+    },
+    {
+        "EMPID": {
+            "result": 10055,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 11,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Shirley, Ward",
+        "AD1": "ROYAL ROAD",
+        "AD2": "CAMP DE MASQUE - MEDINE",
+        "AD3": "CAMP DE MASQUE",
+        "latitude": -20.24427,
+        "longitude": 57.64594
+    },
+    {
+        "EMPID": {
+            "result": 10056,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 5,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Dennis, Gibson",
+        "AD1": "378 PALMA ROAD",
+        "AD2": "QUATRE BORNES",
+        "AD3": "QUATRE BORNES",
+        "latitude": -20.27945,
+        "longitude": 57.45747
+    },
+    {
+        "EMPID": {
+            "result": 10057,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 13,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Nicole, Alexander",
+        "AD1": "ROYAL ROAD 8TH MILE",
+        "AD2": "TRIOLET",
+        "AD3": "TRIOLET",
+        "latitude": -20.04158,
+        "longitude": 57.55871
+    },
+    {
+        "EMPID": {
+            "result": 10058,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 9,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Jeffrey, Mills",
+        "AD1": "PRINTANIER STREET",
+        "AD2": "CENTRAL FLACQ",
+        "AD3": "CENTRAL FLACQ",
+        "latitude": -20.11393,
+        "longitude": 57.56179
+    },
+    {
+        "EMPID": {
+            "result": 10059,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 4,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Stephanie, Boyd",
+        "AD1": "SSR ROAD",
+        "AD2": "MISSION CROSS ROAD",
+        "AD3": "BON ACCUEIL",
+        "latitude": -20.17733,
+        "longitude": 57.6715
+    },
+    {
+        "EMPID": {
+            "result": 10060,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 8,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "George, Fox",
+        "AD1": "ROYAL ROAD",
+        "AD2": "MORCELLEMENT ST ANDRE",
+        "AD3": "MORCELLEMENT ST ANDRE",
+        "latitude": -20.0787,
+        "longitude": 57.56335
+    },
+    {
+        "EMPID": {
+            "result": 10061,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 13,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Janice, Henderson",
+        "AD1": "Des Vergues Lane",
+        "AD2": "Glen Park",
+        "AD3": "Vacoas",
+        "latitude": -20.32834,
+        "longitude": 57.48502
+    },
+    {
+        "EMPID": {
+            "result": 10062,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 7,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Eric, Murphy",
+        "AD1": "HIGHLANDS",
+        "AD2": "",
+        "AD3": "",
+        "latitude": 35.05312,
+        "longitude": -83.19684
+    },
+    {
+        "EMPID": {
+            "result": 10063,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 11,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Melissa, Perry",
+        "AD1": "ROSHNI ROAD",
+        "AD2": "FOND DU SAC",
+        "AD3": "FOND DU SAC",
+        "latitude": -20.04928,
+        "longitude": 57.58525
+    },
+    {
+        "EMPID": {
+            "result": 10064,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 15,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Stephen, Grant",
+        "AD1": "HOLLYWOOD NO 1",
+        "AD2": "VACOAS",
+        "AD3": "VACOAS",
+        "latitude": -20.29299,
+        "longitude": 57.48041
+    },
+    {
+        "EMPID": {
+            "result": 10065,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 6,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Dorothy, Hayes",
+        "AD1": "37 DR REID STREET",
+        "AD2": "BEAU BASSIN",
+        "AD3": "BEAU BASSIN",
+        "latitude": -20.21902,
+        "longitude": 57.4651
+    },
+    {
+        "EMPID": {
+            "result": 10066,
+            "sharedFormula": "A3"
+        },
+        "TeamID": {
+            "result": 5,
+            "sharedFormula": "B3"
+        },
+        "EMPNAME": "Patrick, Bryant",
+        "AD1": "16 Corner Governor and Velore ",
+        "AD2": "PLAINE VERTE",
+        "AD3": "PLAINE VERTE",
+        "latitude": 43.59162,
+        "longitude": 3.10706
+    },
+    {
+        "EMPID": {
+            "formula": "ROW()+10000",
+            "result": 10067,
+            "ref": "A67:A130",
+            "shareType": "shared"
+        },
+        "TeamID": {
+            "formula": "RANDBETWEEN(1, 20)",
+            "result": 18,
+            "ref": "B67:B130",
+            "shareType": "shared"
+        },
+        "EMPNAME": "Kimberly, Hart",
+        "AD1": "VALTON ROAD",
+        "AD2": "CHUMMUN LANE",
+        "AD3": "LONG MOUNTAIN",
+        "latitude": -20.15864,
+        "longitude": 57.56842
+    },
+    {
+        "EMPID": {
+            "result": 10068,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 18,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Gregory, Lane",
+        "AD1": "74, CROWN LANE",
+        "AD2": "BEAU VALLON - MAHEBOURG",
+        "AD3": "BEAU VALLON",
+        "latitude": -20.42129,
+        "longitude": 57.71316
+    },
+    {
+        "EMPID": {
+            "result": 10069,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 1,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Amy, Weaver",
+        "AD1": "MAHATMA GANDHI ROAD",
+        "AD2": "CREVE COEUR",
+        "AD3": "CREVE COEUR",
+        "latitude": -20.18085,
+        "longitude": 57.56387
+    },
+    {
+        "EMPID": {
+            "result": 10070,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 7,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Raymond, Larson",
+        "AD1": "CAMP BOMBAYE",
+        "AD2": "FOREST SIDE",
+        "AD3": "CAMP BOMBAYE",
+        "latitude": -20.29286,
+        "longitude": 57.69781
+    },
+    {
+        "EMPID": {
+            "result": 10071,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 10,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Carol, Webb",
+        "AD1": "150, MORCELLEMENT POUSSON",
+        "AD2": "LA MARIE - VACOAS",
+        "AD3": "LA MARIE",
+        "latitude": -20.34171,
+        "longitude": 57.49271
+    },
+    {
+        "EMPID": {
+            "result": 10072,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 11,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Benjamin, Harper",
+        "AD1": "CHOISY ROAD",
+        "AD2": "POSTE DE FLACQ",
+        "AD3": "POSTE DE FLACQ",
+        "latitude": -20.16559,
+        "longitude": 57.73668
+    },
+    {
+        "EMPID": {
+            "result": 10073,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 10,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Samantha, Washington",
+        "AD1": "Lorrier Ave",
+        "AD2": "Point Aux Canonnier",
+        "AD3": "Mauritius",
+        "latitude": -20.1732,
+        "longitude": 57.44358
+    },
+    {
+        "EMPID": {
+            "result": 10074,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 19,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Walter, Shaw",
+        "AD1": "50, AVENUE SSR",
+        "AD2": "SODNAC",
+        "AD3": "SODNAC",
+        "latitude": -20.26795,
+        "longitude": 57.48627
+    },
+    {
+        "EMPID": {
+            "result": 10075,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 9,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Marie, Ryan",
+        "AD1": "65 RUE FANGOORAIN",
+        "AD2": "MORC MAISON BLANCHE",
+        "AD3": "PAMPLEMOUSSES",
+        "latitude": 36.83749,
+        "longitude": 10.08807
+    },
+    {
+        "EMPID": {
+            "result": 10076,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 11,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Bruce, Hunter",
+        "AD1": "DATIER LANE",
+        "AD2": "HIGHLANDS - PHOENIX",
+        "AD3": "HIGHLANDS",
+        "latitude": 27.2935,
+        "longitude": -81.36257
+    },
+    {
+        "EMPID": {
+            "result": 10077,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 8,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Julie, Morgan",
+        "AD1": "Morcellement Highlands Rose",
+        "AD2": "Highlands - Belle Terre",
+        "AD3": "",
+        "latitude": -20.27472,
+        "longitude": 57.51628
+    },
+    {
+        "EMPID": {
+            "result": 10078,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 17,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Ralph, Simpson",
+        "AD1": "59, RIVIERE SECHE STREET",
+        "AD2": "FLOREAL",
+        "AD3": "FLOREAL",
+        "latitude": 45.29541,
+        "longitude": -66.03175
+    },
+    {
+        "EMPID": {
+            "result": 10079,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 3,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Cheryl, Duncan",
+        "AD1": "38 MALLAC STREET",
+        "AD2": "ROSE HILL",
+        "AD3": "ROSE HILL",
+        "latitude": -20.24879,
+        "longitude": 57.47032
+    },
+    {
+        "EMPID": {
+            "result": 10080,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 20,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Henry, Harvey",
+        "AD1": "ROYAL ROAD",
+        "AD2": "NOUVELLE FRANCE",
+        "AD3": "NOUVELLE FRANCE",
+        "latitude": 45.74584,
+        "longitude": -0.81173
+    },
+    {
+        "EMPID": {
+            "result": 10081,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 2,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Rachel, Bradley",
+        "AD1": "NEHRU LANE",
+        "AD2": "FOND DU SAC",
+        "AD3": "FOND DU SAC",
+        "latitude": -20.04616,
+        "longitude": 57.58626
+    },
+    {
+        "EMPID": {
+            "result": 10082,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 7,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Roy, Burke",
+        "AD1": "TIWARI LANE",
+        "AD2": "MONT FERTILE",
+        "AD3": "ROSE BELLE",
+        "latitude": -20.39983,
+        "longitude": 57.60203
+    },
+    {
+        "EMPID": {
+            "result": 10083,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 7,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Amanda, Holland",
+        "AD1": "27 ROUTE BASSIN",
+        "AD2": "LA LOUISE - QUATRE BORNES",
+        "AD3": "QUATRE BORNES",
+        "latitude": -20.27221,
+        "longitude": 57.47632
+    },
+    {
+        "EMPID": {
+            "result": 10084,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 11,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Eugene, Gordon",
+        "AD1": "1b Avenue Loriots",
+        "AD2": "SODNAC - QUATRE BORNES",
+        "AD3": "SODNAC",
+        "latitude": -20.26795,
+        "longitude": 57.48627
+    },
+    {
+        "EMPID": {
+            "result": 10085,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 18,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Christine, Nichols",
+        "AD1": "LA CAVERNE NO. 2",
+        "AD2": "VACOAS",
+        "AD3": "VACOAS",
+        "latitude": -20.30401,
+        "longitude": 57.48103
+    },
+    {
+        "EMPID": {
+            "result": 10086,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 6,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Louis, Sims",
+        "AD1": "ROYAL ROAD",
+        "AD2": "CAMP ITHIER",
+        "AD3": "FLACQ",
+        "latitude": -20.21852,
+        "longitude": 57.75194
+    },
+    {
+        "EMPID": {
+            "result": 10087,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 6,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Sara, Wells",
+        "AD1": "LOT 77 LE LOTISSEMENT",
+        "AD2": "ARSENAL",
+        "AD3": "ARSENAL",
+        "latitude": 46.08645,
+        "longitude": 4.42847
+    },
+    {
+        "EMPID": {
+            "result": 10088,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 20,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Alice, Ramos",
+        "AD1": "ROYAL ROAD",
+        "AD2": "BRISEE VERDIERE",
+        "AD3": "BRISEE VERDIERE",
+        "latitude": -20.19457,
+        "longitude": 57.69979
+    },
+    {
+        "EMPID": {
+            "result": 10089,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 20,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Jerry, Lawson",
+        "AD1": "BEELUR ROAD",
+        "AD2": "NOUVELLE DECOUVERTE",
+        "AD3": "SAINT PIERRE",
+        "latitude": 45.95259,
+        "longitude": -1.33264
+    },
+    {
+        "EMPID": {
+            "result": 10090,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 20,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Victoria, Mason",
+        "AD1": "ROYAL ROAD",
+        "AD2": "EAU COULEE - CUREPIPE",
+        "AD3": "EAU COULEE",
+        "latitude": 44.86798,
+        "longitude": -92.2703
+    },
+    {
+        "EMPID": {
+            "result": 10091,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 4,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Helen, Freeman",
+        "AD1": "HIGHLANDS",
+        "AD2": "CAMPEMENT ROAD",
+        "AD3": "PHOENIX",
+        "latitude": 41.3645,
+        "longitude": -74.14295
+    },
+    {
+        "EMPID": {
+            "result": 10092,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 20,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Sean, Ray",
+        "AD1": "COASTAL ROAD",
+        "AD2": "POSTE LA FAYETTE",
+        "AD3": "FLACQ",
+        "latitude": -20.1646,
+        "longitude": 57.74024
+    },
+    {
+        "EMPID": {
+            "result": 10093,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 18,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Gloria, Hoffman",
+        "AD1": "AVENUE BERTHAUD",
+        "AD2": "RAJCOOMAR LANE IMPASSE FIGUIER",
+        "AD3": "QUATRE BORNES",
+        "latitude": -20.27562,
+        "longitude": 57.45759
+    },
+    {
+        "EMPID": {
+            "result": 10094,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 14,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Philip, Jordan",
+        "AD1": "HIGHLANDS",
+        "AD2": "CAMPEMENT ROAD",
+        "AD3": "PHOENIX",
+        "latitude": 41.3645,
+        "longitude": -74.14295
+    },
+    {
+        "EMPID": {
+            "result": 10095,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 17,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Anna, Arnold",
+        "AD1": "ROYAL ROAD",
+        "AD2": "TROU D'EAU DOUCE",
+        "AD3": "TROU D'EAU DOUCE",
+        "latitude": -20.24201,
+        "longitude": 57.78594
+    },
+    {
+        "EMPID": {
+            "result": 10096,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 10,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Peter, Rose",
+        "AD1": "GROS BILLOT",
+        "AD2": "NEW GROVE",
+        "AD3": "NEW GROVE",
+        "latitude": -20.41222,
+        "longitude": 57.61866
+    },
+    {
+        "EMPID": {
+            "result": 10097,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 4,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Diana, Watkins",
+        "AD1": "BASDEO BISSOONDOYAL ROAD",
+        "AD2": "LALLMATIE",
+        "AD3": "LALLMATIE",
+        "latitude": -20.18298,
+        "longitude": 57.66588
+    },
+    {
+        "EMPID": {
+            "result": 10098,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 16,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Adam, Ford",
+        "AD1": "RUGHOOPUTH LANE",
+        "AD2": "PALMA - QUATRE BORNES",
+        "AD3": "PALMA",
+        "latitude": -20.27907,
+        "longitude": 57.46012
+    },
+    {
+        "EMPID": {
+            "result": 10099,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 18,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Debra, Banks",
+        "AD1": "MOSQUE ROAD",
+        "AD2": "GRAND PORT",
+        "AD3": "ROSE BELLE",
+        "latitude": -20.40607,
+        "longitude": 57.60367
+    },
+    {
+        "EMPID": {
+            "result": 10100,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 18,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Wayne, Owens",
+        "AD1": "3RD JUDIVADOO ROAD",
+        "AD2": "SOLITUDE",
+        "AD3": "TRIOLET",
+        "latitude": -20.07613,
+        "longitude": 57.54461
+    },
+    {
+        "EMPID": {
+            "result": 10101,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 10,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Teresa, Miles",
+        "AD1": "VINEY ROAD",
+        "AD2": "CALODYNE",
+        "AD3": "CALODYNE"
+    },
+    {
+        "EMPID": {
+            "result": 10102,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 16,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Harry, Warren",
+        "AD1": "78, AVENUE MULTIPLIANT",
+        "AD2": "MONREAL 3, COROMANDEL",
+        "AD3": "BEAU BASSIN",
+        "latitude": 48.04403,
+        "longitude": -65.49174
+    },
+    {
+        "EMPID": {
+            "result": 10103,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 2,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Heather, Armstrong",
+        "AD1": "SAVANNE ROAD",
+        "AD2": "NOUVELLE FRANCE",
+        "AD3": "NOUVELLE FRANCE",
+        "latitude": 47.57111,
+        "longitude": -0.36168
+    },
+    {
+        "EMPID": {
+            "result": 10104,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 17,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Keith, Mills",
+        "AD1": "HOLLYROOD NO 1",
+        "AD2": "VACOAS",
+        "AD3": "VACOAS",
+        "latitude": -20.29299,
+        "longitude": 57.48041
+    },
+    {
+        "EMPID": {
+            "result": 10105,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 2,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Jacqueline, Burke",
+        "AD1": "ROYAL ROAD",
+        "AD2": "CONSTANCE",
+        "AD3": "SAINT PIERRE",
+        "latitude": 27.48528,
+        "longitude": -80.301
+    },
+    {
+        "EMPID": {
+            "result": 10106,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 13,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Martha, Elliott",
+        "AD1": "242 HUGNIN ROAD",
+        "AD2": "ROSE HILL",
+        "AD3": "ROSE HILL",
+        "latitude": -20.23846,
+        "longitude": 57.4639
+    },
+    {
+        "EMPID": {
+            "result": 10107,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 17,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Samuel, Ferguson",
+        "AD1": "35, MORC. PROVIDENCIA 2",
+        "AD2": "PROVIDENCE",
+        "AD3": "QUARTIER MILITAIRE"
+    },
+    {
+        "EMPID": {
+            "result": 10108,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 3,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Anne, Diaz",
+        "AD1": "ROYAL ROAD",
+        "AD2": "L'ESPERANCE",
+        "AD3": "QUARTIER MILITAIRE",
+        "latitude": -20.27361,
+        "longitude": 57.55448
+    },
+    {
+        "EMPID": {
+            "result": 10109,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 3,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Jesse, Rhodes",
+        "AD1": "ABBATOIR STREET",
+        "AD2": "SURINAM",
+        "AD3": "SURINAM",
+        "latitude": 27.02524,
+        "longitude": -82.01269
+    },
+    {
+        "EMPID": {
+            "result": 10110,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 15,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Carl, Black",
+        "AD1": "BALANCE ROAD",
+        "AD2": "CAROLINE-BEL AIR RIVIERE SECHE",
+        "AD3": "CAROLINE",
+        "latitude": -20.25029,
+        "longitude": 57.75706
+    },
+    {
+        "EMPID": {
+            "result": 10111,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 3,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Janice, Stokes",
+        "AD1": "ALLEE DES NICOLAIS",
+        "AD2": "BEAU VALLON",
+        "AD3": "MAHEBOURG",
+        "latitude": -20.41888,
+        "longitude": 57.70381
+    },
+    {
+        "EMPID": {
+            "result": 10112,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 1,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Billy, Hale",
+        "AD1": "32 RAYMOND DE KERVERN",
+        "AD2": "RICHE TERRE",
+        "AD3": "RICHE TERRE",
+        "latitude": 45.33511,
+        "longitude": 1.94109
+    },
+    {
+        "EMPID": {
+            "result": 10113,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 16,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Jean, Douglas",
+        "AD1": "ROYAL ROAD",
+        "AD2": "QUARTIER MILITAIRE",
+        "AD3": "QUARTIER MILITAIRE",
+        "latitude": -20.27361,
+        "longitude": 57.55448
+    },
+    {
+        "EMPID": {
+            "result": 10114,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 11,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Earl, Gonzales",
+        "AD1": "RISHI DAYANAND ROAD",
+        "AD2": "CAMP CAROL",
+        "AD3": "LE BOUCHON",
+        "latitude": -20.44337,
+        "longitude": 57.67729
+    },
+    {
+        "EMPID": {
+            "result": 10115,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 4,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Laurie, Gross",
+        "AD1": "MORCELLEMENT MTMD",
+        "AD2": "HIGHLANDS",
+        "AD3": "PHOENIX",
+        "latitude": 27.2935,
+        "longitude": -81.36257
+    },
+    {
+        "EMPID": {
+            "result": 10116,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 18,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Lawrence, Lyons",
+        "AD1": "138 HUGNIN ROAD",
+        "AD2": "Rose-Hill",
+        "AD3": "",
+        "latitude": -20.23846,
+        "longitude": 57.4639
+    },
+    {
+        "EMPID": {
+            "result": 10117,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 1,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Theresa, Garner",
+        "AD1": "COMLONE ROAD",
+        "AD2": "NOUVELLE FRANCE",
+        "AD3": "NOUVELLE FRANCE",
+        "latitude": 47.57111,
+        "longitude": -0.36168
+    },
+    {
+        "EMPID": {
+            "result": 10118,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 6,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Vincent, Carr",
+        "AD1": "ROYAL ROAD",
+        "AD2": "CHEMIN GRENIER",
+        "AD3": "CHEMIN GRENIER",
+        "latitude": 47.06744,
+        "longitude": -67.7565
+    },
+    {
+        "EMPID": {
+            "result": 10119,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 6,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Norma, Paul",
+        "AD1": "ROYAL ROAD",
+        "AD2": "CAMP ITHIER",
+        "AD3": "FLACQ",
+        "latitude": -20.21852,
+        "longitude": 57.75194
+    },
+    {
+        "EMPID": {
+            "result": 10120,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 1,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Johnny, Stone",
+        "AD1": "LA BARRAQUE ROAD",
+        "AD2": "PLAINE MAGNIEN",
+        "AD3": "PLAINE MAGNIEN",
+        "latitude": -20.43763,
+        "longitude": 57.65699
+    },
+    {
+        "EMPID": {
+            "result": 10121,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 20,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Christine, Reyes",
+        "AD1": "SSR ROAD ILOT",
+        "AD2": "CAMP DIABLE",
+        "AD3": "CAMP DIABLE",
+        "latitude": -20.46902,
+        "longitude": 57.58153
+    },
+    {
+        "EMPID": {
+            "result": 10122,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 7,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Christina, Welch",
+        "AD1": "KASMIR RD",
+        "AD2": "PLAINE MAGNIEN",
+        "AD3": "PLAINE MAGNIEN",
+        "latitude": -20.4244,
+        "longitude": 57.69832
+    },
+    {
+        "EMPID": {
+            "result": 10123,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 10,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Frank, Erickson",
+        "AD1": "28 LECLEZIO STREET",
+        "AD2": "CUREPIPE",
+        "AD3": "CUREPIPE",
+        "latitude": -20.31441,
+        "longitude": 57.53251
+    },
+    {
+        "EMPID": {
+            "result": 10124,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 12,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Shirley, Mendoza",
+        "AD1": "MORC BLUE PRINT",
+        "AD2": "ROYAL ROAD",
+        "AD3": "CHEMIN GRENIER",
+        "latitude": 45.45807,
+        "longitude": -65.984
+    },
+    {
+        "EMPID": {
+            "result": 10125,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 15,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Fred, Hanson",
+        "AD1": "JOHN KENNEDY STREET",
+        "AD2": "3 BOUTIQUES",
+        "AD3": "TRIOLET",
+        "latitude": 28.03042,
+        "longitude": -82.74758
+    },
+    {
+        "EMPID": {
+            "result": 10126,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 19,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Ann, Cook",
+        "AD1": "KALIMAYE ROAD",
+        "AD2": "LA ROSA",
+        "AD3": "LA ROSA",
+        "latitude": -18.59899,
+        "longitude": 146.09151
+    },
+    {
+        "EMPID": {
+            "result": 10127,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 16,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Kathryn, Hardy",
+        "AD1": "4, DR BOUR STREET",
+        "AD2": "ST PATRICK - ROSE HILL",
+        "AD3": "ROSE HILL",
+        "latitude": -20.25187,
+        "longitude": 57.47213
+    },
+    {
+        "EMPID": {
+            "result": 10128,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 17,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Roger, Johnston",
+        "AD1": "NANKA ROAD",
+        "AD2": "BRAMSTHAN",
+        "AD3": "BRAMSTHAN",
+        "latitude": -20.21222,
+        "longitude": 57.73448
+    },
+    {
+        "EMPID": {
+            "result": 10129,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 8,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Elaine, Rivera",
+        "AD1": "JANSEE ROAD",
+        "AD2": "POUDRE D'OR",
+        "AD3": "HAMLET",
+        "latitude": -20.07854,
+        "longitude": 57.65681
+    },
+    {
+        "EMPID": {
+            "result": 10130,
+            "sharedFormula": "A67"
+        },
+        "TeamID": {
+            "result": 17,
+            "sharedFormula": "B67"
+        },
+        "EMPNAME": "Louise, Dean",
+        "AD1": "AVENUE DES LETCHIERS",
+        "AD2": "MORC BELLE VUE",
+        "AD3": "ALBION",
+        "latitude": -20.19822,
+        "longitude": 57.41151
+    },
+    {
+        "EMPID": {
+            "formula": "ROW()+10000",
+            "result": 10131,
+            "ref": "A131:A194",
+            "shareType": "shared"
+        },
+        "TeamID": {
+            "formula": "RANDBETWEEN(1, 20)",
+            "result": 3,
+            "ref": "B131:B194",
+            "shareType": "shared"
+        },
+        "EMPNAME": "Clifford, Austin",
+        "AD1": "RAMJAN LANE",
+        "AD2": "COUVENT DE LORETTE",
+        "AD3": "CUREPIPE",
+        "latitude": -20.29875,
+        "longitude": 57.48906
+    },
+    {
+        "EMPID": {
+            "result": 10132,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 19,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Beverly, Long",
+        "AD1": "IMPASSE BELVEDERE",
+        "AD2": "5EME MILLE",
+        "AD3": "BEAU BASSIN",
+        "latitude": -20.21236,
+        "longitude": 57.46878
+    },
+    {
+        "EMPID": {
+            "result": 10133,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 9,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Russell, Fowler",
+        "AD1": "LE SOLITAIRE STREET",
+        "AD2": "FOREST SIDE",
+        "AD3": "16 EME MILE",
+        "latitude": 48.94466,
+        "longitude": -57.97028
+    },
+    {
+        "EMPID": {
+            "result": 10134,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 2,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Joe, Webb",
+        "AD1": "75, JOHN KENNEDY AVENUE",
+        "AD2": "VACOAS",
+        "AD3": "VACOAS",
+        "latitude": -20.30572,
+        "longitude": 57.492
+    },
+    {
+        "EMPID": {
+            "result": 10135,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 8,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Andrea, Wilkins",
+        "AD1": "CAMP FOUQUEREAUX RAOD",
+        "AD2": "CASTEL - PHOENIX",
+        "AD3": "CASTEL",
+        "latitude": 43.67449,
+        "longitude": -79.36854
+    },
+    {
+        "EMPID": {
+            "result": 10136,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 14,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Jimmy, Saunders",
+        "AD1": "AVENUE DES PETRELS",
+        "AD2": "MEDINE",
+        "AD3": "CAMP DE MASQUE",
+        "latitude": -20.24113,
+        "longitude": 57.65081
+    },
+    {
+        "EMPID": {
+            "result": 10137,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 15,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Eva, Francis",
+        "AD1": "18JP LA BONTE",
+        "AD2": "VACOAS",
+        "AD3": "VACOAS",
+        "latitude": -21.13871,
+        "longitude": 55.62654
+    },
+    {
+        "EMPID": {
+            "result": 10138,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 1,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Phillip, Sherman",
+        "AD1": "SHIV PRAKASH MANDIR RD",
+        "AD2": "7TH MILE",
+        "AD3": "TRIOLET",
+        "latitude": -20.07436,
+        "longitude": 57.54756
+    },
+    {
+        "EMPID": {
+            "result": 10139,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 1,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Rose, Lambert",
+        "AD1": "CLOSEL ROAD",
+        "AD2": "PHOENIX",
+        "AD3": "PHOENIX",
+        "latitude": -20.28596,
+        "longitude": 57.49491
+    },
+    {
+        "EMPID": {
+            "result": 10140,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 18,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Marvin, Walton",
+        "AD1": "BADAL LANE",
+        "AD2": "CIRCONSTANCE",
+        "AD3": "SAINT PIERRE",
+        "latitude": -20.22395,
+        "longitude": 57.54201
+    },
+    {
+        "EMPID": {
+            "result": 10141,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 13,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Eileen, Briggs",
+        "AD1": "POONYE LANE",
+        "AD2": "CANOT",
+        "AD3": "CANOT",
+        "latitude": -20.2205,
+        "longitude": 57.42816
+    },
+    {
+        "EMPID": {
+            "result": 10142,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 13,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Melinda, Maxwell",
+        "AD1": "ALLEE BRILLANT",
+        "AD2": "CASTEL",
+        "AD3": "CASTEL",
+        "latitude": 46.89993,
+        "longitude": 6.77925
+    },
+    {
+        "EMPID": {
+            "result": 10143,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 3,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Lee, Pittman",
+        "AD1": "MORCELLEMENT ROY",
+        "AD2": "BEL AIR RIVIERE SECHE",
+        "AD3": "BEL AIR RIVIERE SECHE",
+        "latitude": -20.26404,
+        "longitude": 57.74768
+    },
+    {
+        "EMPID": {
+            "result": 10144,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 9,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Frances, Newton",
+        "AD1": "JUHOOR STREET",
+        "AD2": "GRAND BEL AIR",
+        "AD3": "MAHEBOURG",
+        "latitude": -20.40798,
+        "longitude": 57.67675
+    },
+    {
+        "EMPID": {
+            "result": 10145,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 14,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Allison, Hale",
+        "AD1": "SAMPUTH LANE",
+        "AD2": "GROS BILLOT",
+        "AD3": "NEW GROVE",
+        "latitude": 40.85306,
+        "longitude": -73.11499
+    },
+    {
+        "EMPID": {
+            "result": 10146,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 4,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Ashley, Glover",
+        "AD1": "BERTHAUD AVENUE,",
+        "AD2": "QUATRE BORNES",
+        "AD3": "QUATRE BORNES",
+        "latitude": -20.26753,
+        "longitude": 57.46721
+    },
+    {
+        "EMPID": {
+            "result": 10147,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 12,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Stanley, Wong",
+        "AD1": "PETIT VILLAGE",
+        "AD2": "GOODLANDS",
+        "AD3": "",
+        "latitude": -20.03329,
+        "longitude": 57.67651
+    },
+    {
+        "EMPID": {
+            "result": 10148,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 8,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Natalie, Tate",
+        "AD1": "SOLFERINO 1",
+        "AD2": "BONNE TERRE",
+        "AD3": "VACOAS",
+        "latitude": 16.3565,
+        "longitude": -61.45103
+    },
+    {
+        "EMPID": {
+            "result": 10149,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 19,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Philip, Yates",
+        "AD1": "ROYAL ROAD",
+        "AD2": "BELLE VUE MAUREL",
+        "AD3": "BELLE VUE MAUREL",
+        "latitude": -20.12242,
+        "longitude": 57.6699
+    },
+    {
+        "EMPID": {
+            "result": 10150,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 18,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Martin, Vasquez",
+        "AD1": "NEW ROAD",
+        "AD2": "ROCHES NOIRES",
+        "AD3": "ROCHES NOIRES",
+        "latitude": -20.11343,
+        "longitude": 57.71969
+    },
+    {
+        "EMPID": {
+            "result": 10151,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 10,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Laura, Briggs",
+        "AD1": "IMPASSE GULLAM HOSSEN",
+        "AD2": "LA PEYROUSE, EAU COULEE",
+        "AD3": "CUREPIPE ROAD"
+    },
+    {
+        "EMPID": {
+            "result": 10152,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 18,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Emily, Dawson",
+        "AD1": "VILLENEUVE STREET",
+        "AD2": "MAHEBOURG",
+        "AD3": "MAHEBOURG",
+        "latitude": -20.40956,
+        "longitude": 57.70822
+    },
+    {
+        "EMPID": {
+            "result": 10153,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 19,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Victor, Grant",
+        "AD1": "122, ROYAL ROAD,",
+        "AD2": "GROS CAILLOUX - PETITE RIVIERE",
+        "AD3": "GROS CAILLOUX",
+        "latitude": -20.21364,
+        "longitude": 57.4352
+    },
+    {
+        "EMPID": {
+            "result": 10154,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 3,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Wayne, Walsh",
+        "AD1": "PAVADAY",
+        "AD2": "LA MARIE ROAD",
+        "AD3": "VACOAS",
+        "latitude": -20.32233,
+        "longitude": 57.48479
+    },
+    {
+        "EMPID": {
+            "result": 10155,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 17,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Irene, Wade",
+        "AD1": "NO 2, BONNEFIN",
+        "AD2": "PAILLES",
+        "AD3": "PAILLES",
+        "latitude": 47.66577,
+        "longitude": -0.77574
+    },
+    {
+        "EMPID": {
+            "result": 10156,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 6,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Jose, Guerrero",
+        "AD1": "QUEEN ELIZABETH ROAD",
+        "AD2": "7TH MILE",
+        "AD3": "TRIOLET",
+        "latitude": 51.5895,
+        "longitude": -0.0354
+    },
+    {
+        "EMPID": {
+            "result": 10157,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 10,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Alan, Rose",
+        "AD1": "18A, TANK-WEN STREET",
+        "AD2": "PORT LOUIS",
+        "AD3": "PORT LOUIS",
+        "latitude": -20.16696,
+        "longitude": 57.49473
+    },
+    {
+        "EMPID": {
+            "result": 10158,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 1,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Paula, Boone",
+        "AD1": "VICTORIA ROAD",
+        "AD2": "TROU D'EAU DOUCE",
+        "AD3": "TROU D'EAU DOUCE",
+        "latitude": -20.23542,
+        "longitude": 57.78681
+    },
+    {
+        "EMPID": {
+            "result": 10159,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 12,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Alicia, Hopkins",
+        "AD1": "HARDLINE STREET",
+        "AD2": "ROBINSON ROAD CUREPIPE",
+        "AD3": "CUREPIPE",
+        "latitude": -20.32706,
+        "longitude": 57.50713
+    },
+    {
+        "EMPID": {
+            "result": 10160,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 12,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Raymond, Ellis",
+        "AD1": "B5, ANDREANUM PAILLES",
+        "AD2": "PORT LOUIS",
+        "AD3": "PAILLES",
+        "latitude": -20.18486,
+        "longitude": 57.47741
+    },
+    {
+        "EMPID": {
+            "result": 10161,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 5,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Danny, Curtis",
+        "AD1": "SHAMTALLY LANE",
+        "AD2": "UNION PARK",
+        "AD3": "UNION PARK",
+        "latitude": 42.53878,
+        "longitude": -90.71099
+    },
+    {
+        "EMPID": {
+            "result": 10162,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 13,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Bradley, Logan",
+        "AD1": "B54, AVENUE ODETTE ERNEST",
+        "AD2": "QUATRE BORNES",
+        "AD3": "QUATRE BORBES",
+        "latitude": -20.26667,
+        "longitude": 57.47211
+    },
+    {
+        "EMPID": {
+            "result": 10163,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 8,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Ernest, Ramsey",
+        "AD1": "WILLIAM LORQUAY LANE",
+        "AD2": "CHEMIN GRENIER",
+        "AD3": "CHEMIN GRENIER",
+        "latitude": -20.4973,
+        "longitude": 57.48221
+    },
+    {
+        "EMPID": {
+            "result": 10164,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 17,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Ruby, Singleton",
+        "AD1": "4, DESIRE SICARD",
+        "AD2": "CAMP CHAPELON",
+        "AD3": "PORT LOUIS",
+        "latitude": -20.18183,
+        "longitude": 57.47958
+    },
+    {
+        "EMPID": {
+            "result": 10165,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 20,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Vera, Wade",
+        "AD1": "ADVENTIST ROAD",
+        "AD2": "CHEMIN GRENIER",
+        "AD3": "CHEMIN GRENIER",
+        "latitude": -20.49541,
+        "longitude": 57.47291
+    },
+    {
+        "EMPID": {
+            "result": 10166,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 19,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Allen, Strickland",
+        "AD1": "KALIMAYE ROAD",
+        "AD2": "DAGOTIERE",
+        "AD3": "DAGOTIERE",
+        "latitude": -20.24693,
+        "longitude": 57.56064
+    },
+    {
+        "EMPID": {
+            "result": 10167,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 5,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Beth, Flowers",
+        "AD1": "AVENUE JAYLALL",
+        "AD2": "LANE PALMA ROAD",
+        "AD3": "QUATRE BORNES",
+        "latitude": -20.2779,
+        "longitude": 57.46059
+    },
+    {
+        "EMPID": {
+            "result": 10168,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 13,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Glenn, Riley",
+        "AD1": "38 PALMA ROAD",
+        "AD2": "QUATRE BORNES",
+        "AD3": "QUATRE BORNES",
+        "latitude": -20.27945,
+        "longitude": 57.45747
+    },
+    {
+        "EMPID": {
+            "result": 10169,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 8,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Joyce, Pratt",
+        "AD1": "ROYAL ROAD",
+        "AD2": "BEL AIR RIVIERE SECHE",
+        "AD3": "BEL AIR RIVIERE SECHE",
+        "latitude": -20.25058,
+        "longitude": 57.75632
+    },
+    {
+        "EMPID": {
+            "result": 10170,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 1,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Tony, Perez",
+        "AD1": "ROYAL ROAD",
+        "AD2": "DAGOTIERE",
+        "AD3": "DAGOTIERE",
+        "latitude": -20.24301,
+        "longitude": 57.56474
+    },
+    {
+        "EMPID": {
+            "result": 10171,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 2,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Shannon, Sandoval",
+        "AD1": "MORCELLEMENT LE BLANC",
+        "AD2": "THOMPSON ROAD",
+        "AD3": "VACOAS",
+        "latitude": -20.30164,
+        "longitude": 57.48709
+    },
+    {
+        "EMPID": {
+            "result": 10172,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 9,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Anita, Fisher",
+        "AD1": "ROYAL ROAD",
+        "AD2": "POINTE AUX PIMENTS",
+        "AD3": "POINTE AUX PIMENTS",
+        "latitude": -20.06347,
+        "longitude": 57.5249
+    },
+    {
+        "EMPID": {
+            "result": 10173,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 12,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Arnold, Curtis",
+        "AD1": "SHIVALA ROAD",
+        "AD2": "TERMINUS",
+        "AD3": "TRIOLET",
+        "latitude": -20.04356,
+        "longitude": 57.55355
+    },
+    {
+        "EMPID": {
+            "result": 10174,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 5,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Gina, Clarke",
+        "AD1": "ROYAL ROAD",
+        "AD2": "PELLEGRIN",
+        "AD3": "SEBASTOPOL",
+        "latitude": -20.27931,
+        "longitude": 57.68349
+    },
+    {
+        "EMPID": {
+            "result": 10175,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 14,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Leslie, Hanson",
+        "AD1": "LA ROUTE VINGTA, NO. 3",
+        "AD2": "MODERN SQUARE",
+        "AD3": "VACOAS"
+    },
+    {
+        "EMPID": {
+            "result": 10176,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 10,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Lorraine, Rodgers",
+        "AD1": "12, AVENUE OLLIER",
+        "AD2": "QUATRE BORNES",
+        "AD3": "QUATRE BORNES",
+        "latitude": 45.09344,
+        "longitude": 0.46893
+    },
+    {
+        "EMPID": {
+            "result": 10177,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 6,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Kent, Nichols",
+        "AD1": "PLOT NO 43,",
+        "AD2": "MORC. MON DESERT ALMA,",
+        "AD3": "L'AVENIR ST PIERRE",
+        "latitude": -20.22644,
+        "longitude": 57.54316
+    },
+    {
+        "EMPID": {
+            "result": 10178,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 5,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Marcia, Hale",
+        "AD1": "AVENUE RAOUL LAMARQUE",
+        "AD2": "LA GAULETTE",
+        "AD3": "LA GAULETTE",
+        "latitude": -20.4233,
+        "longitude": 57.36314
+    },
+    {
+        "EMPID": {
+            "result": 10179,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 6,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Alfred, James",
+        "AD1": "A4 RESIDENCE LES GLAIEULS",
+        "AD2": "PETIT VERGER",
+        "AD3": "POINTE AUX SABLES",
+        "latitude": 49.3614,
+        "longitude": 0.93748
+    },
+    {
+        "EMPID": {
+            "result": 10180,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 7,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Marilyn, Boone",
+        "AD1": "34, MILITARY ROAD",
+        "AD2": "PORT LOUIS",
+        "AD3": "PORT LOUIS",
+        "latitude": -20.15863,
+        "longitude": 57.51949
+    },
+    {
+        "EMPID": {
+            "result": 10181,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 18,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Juan, Klein",
+        "AD1": "VINGTA NO 3",
+        "AD2": "VACOAS",
+        "AD3": "VACOAS",
+        "latitude": -20.29616,
+        "longitude": 57.47946
+    },
+    {
+        "EMPID": {
+            "result": 10182,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 16,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Justin, Malone",
+        "AD1": "9, VEL GOVINDEN STREET",
+        "AD2": "BEAU BASSIN",
+        "AD3": "BEAU BASSIN",
+        "latitude": -20.22354,
+        "longitude": 57.46758
+    },
+    {
+        "EMPID": {
+            "result": 10183,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 1,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Jonathan, Brown",
+        "AD1": "JACKSON LANE",
+        "AD2": "ROUTE BASSIN",
+        "AD3": "QUATRE BORNES",
+        "latitude": 48.81761,
+        "longitude": 2.17045
+    },
+    {
+        "EMPID": {
+            "result": 10184,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 13,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Michelle, Goodman",
+        "AD1": "CAMP CAROL",
+        "AD2": "MON DESERT MON TRESOR",
+        "AD3": "LE BOUCHON",
+        "latitude": -20.45022,
+        "longitude": 57.67768
+    },
+    {
+        "EMPID": {
+            "result": 10185,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 8,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Gene, Nelson",
+        "AD1": "RUE MATERNELLE",
+        "AD2": "CAROLINE-BEL AIR RIVIERE SECHE",
+        "AD3": "CAROLINE",
+        "latitude": -20.2584,
+        "longitude": 57.75401
+    },
+    {
+        "EMPID": {
+            "result": 10186,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 12,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Sheila, Bryan",
+        "AD1": "RAMSURN LANE",
+        "AD2": "ST PAUL",
+        "AD3": "ST PAUL",
+        "latitude": 46.26529,
+        "longitude": -119.16046
+    },
+    {
+        "EMPID": {
+            "result": 10187,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 6,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Christian, Spencer",
+        "AD1": "LETORD STREET",
+        "AD2": "GEBERT",
+        "AD3": "ROSE BELLE",
+        "latitude": -20.40854,
+        "longitude": 57.6067
+    },
+    {
+        "EMPID": {
+            "result": 10188,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 4,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Michelle, Shelton",
+        "AD1": "MOSQUE ROAD",
+        "AD2": "BARAMIA",
+        "AD3": "ROSE BELLE",
+        "latitude": -20.40607,
+        "longitude": 57.60367
+    },
+    {
+        "EMPID": {
+            "result": 10189,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 6,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Kelly, Goodman",
+        "AD1": "54, DR O BEAUGEARD STREET",
+        "AD2": "PORT LOUIS",
+        "AD3": "PORT LOUIS",
+        "latitude": -20.1705,
+        "longitude": 57.49966
+    },
+    {
+        "EMPID": {
+            "result": 10190,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 18,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Robin, Smith",
+        "AD1": "NEW RAILWAY ROAD",
+        "AD2": "RIVIERE DU REMPART",
+        "AD3": "RIVIERE DU REMPART",
+        "latitude": -20.10848,
+        "longitude": 57.69236
+    },
+    {
+        "EMPID": {
+            "result": 10191,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 11,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Bruce, Griffin",
+        "AD1": "BARODA LANE",
+        "AD2": "RIVIERE DU REMPART",
+        "AD3": "RIVIERE DU REMPART",
+        "latitude": -20.10848,
+        "longitude": 57.69236
+    },
+    {
+        "EMPID": {
+            "result": 10192,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 8,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Willard, Bailey",
+        "AD1": "MARIE JEANNE ROAD",
+        "AD2": "15 CANTONS - VACOAS",
+        "AD3": "VACOAS",
+        "latitude": -20.3099,
+        "longitude": 57.48121
+    },
+    {
+        "EMPID": {
+            "result": 10193,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 12,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Carlos, Gill",
+        "AD1": "VALORY ROAD",
+        "AD2": "MOKA",
+        "AD3": "MOKA",
+        "latitude": -20.22079,
+        "longitude": 57.50182
+    },
+    {
+        "EMPID": {
+            "result": 10194,
+            "sharedFormula": "A131"
+        },
+        "TeamID": {
+            "result": 4,
+            "sharedFormula": "B131"
+        },
+        "EMPNAME": "Daryl, Reeves",
+        "AD1": "ISLAMIC CENTRE",
+        "AD2": "MILITARY ROAD, CITE MARTIAL",
+        "AD3": "PORT LOUIS",
+        "latitude": 34.24956,
+        "longitude": -77.82686
+    },
+    {
+        "EMPID": {
+            "formula": "ROW()+10000",
+            "result": 10195,
+            "ref": "A195:A258",
+            "shareType": "shared"
+        },
+        "TeamID": {
+            "formula": "RANDBETWEEN(1, 20)",
+            "result": 6,
+            "ref": "B195:B258",
+            "shareType": "shared"
+        },
+        "EMPNAME": "Victoria, Miles",
+        "AD1": "205 MORCELLEMENT POUSSON",
+        "AD2": "LA MARIE",
+        "AD3": "LA MARIE - VACOAS",
+        "latitude": -20.34171,
+        "longitude": 57.49271
+    },
+    {
+        "EMPID": {
+            "result": 10196,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 16,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Irene, Lewis",
+        "AD1": "KEJIOU ROAD",
+        "AD2": "PETIT VILLAGE",
+        "AD3": "GOODLANDS",
+        "latitude": -20.03329,
+        "longitude": 57.67651
+    },
+    {
+        "EMPID": {
+            "result": 10197,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 4,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Melissa, Olson",
+        "AD1": "BUS STOP LANE",
+        "AD2": "MELROSE",
+        "AD3": "MELROSE",
+        "latitude": -20.27264,
+        "longitude": 57.64066
+    },
+    {
+        "EMPID": {
+            "result": 10198,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 7,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Paula, Johnson",
+        "AD1": "215 AVE MGR LEEN",
+        "AD2": "QUATRE BORNES",
+        "AD3": "QUATRE BORNES",
+        "latitude": -20.28058,
+        "longitude": 57.46905
+    },
+    {
+        "EMPID": {
+            "result": 10199,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 20,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Tanya, Rice",
+        "AD1": "BHARATI ROAD",
+        "AD2": "COTTAGE",
+        "AD3": "COTTAGE",
+        "latitude": -37.68893,
+        "longitude": 140.93915
+    },
+    {
+        "EMPID": {
+            "result": 10200,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 14,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Rhonda, Malone",
+        "AD1": "LETORD ROAD",
+        "AD2": "ROSE BELLE",
+        "AD3": "ROSE BELLE",
+        "latitude": -20.25513,
+        "longitude": 57.72607
+    },
+    {
+        "EMPID": {
+            "result": 10201,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 12,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Lynda, Gutierrez",
+        "AD1": "MUTTY ROAD",
+        "AD2": "NOUVELLE DECOUVERTE",
+        "AD3": "NOUVELLE DECOUVERTE",
+        "latitude": -20.18353,
+        "longitude": 57.59211
+    },
+    {
+        "EMPID": {
+            "result": 10202,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 20,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Tamara, Roberts",
+        "AD1": "LOLLJI ROAD",
+        "AD2": "MARIE JEANNIE",
+        "AD3": "ROSE BELLE",
+        "latitude": -20.40189,
+        "longitude": 57.59327
+    },
+    {
+        "EMPID": {
+            "result": 10203,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 6,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Leo, Murray",
+        "AD1": "BUTTE A L'HERBE",
+        "AD2": "CALODYNE",
+        "AD3": "CALODYNE"
+    },
+    {
+        "EMPID": {
+            "result": 10204,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 7,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Claude, Burgess",
+        "AD1": "GIQUEL STREET",
+        "AD2": "EAU COULEE - CUREPIPE",
+        "AD3": "EAU COULEE",
+        "latitude": 44.71022,
+        "longitude": -92.08023
+    },
+    {
+        "EMPID": {
+            "result": 10205,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 3,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Steven, Estrada",
+        "AD1": "MUNDHUP LANE",
+        "AD2": "MONTAGNE BLANCHE",
+        "AD3": "MONTAGNE BLANCHE",
+        "latitude": -20.28564,
+        "longitude": 57.66128
+    },
+    {
+        "EMPID": {
+            "result": 10206,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 14,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Loretta, Reed",
+        "AD1": "SOOKDEO BISSOONDOYAL STREET",
+        "AD2": "NOUVELLE FRANCE",
+        "AD3": "NOUVELLE FRANCE",
+        "latitude": 44.00848,
+        "longitude": -0.19241
+    },
+    {
+        "EMPID": {
+            "result": 10207,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 8,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Jerome, Buchanan",
+        "AD1": "TALIPOT LANE",
+        "AD2": "PETITE RIVIERE",
+        "AD3": "PETITE RIVIERE",
+        "latitude": -20.19639,
+        "longitude": 57.44579
+    },
+    {
+        "EMPID": {
+            "result": 10208,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 15,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Frances, Fields",
+        "AD1": "6 Harlequin Fish Street",
+        "AD2": "Chapman's View",
+        "AD3": "Coromandel",
+        "latitude": -25.98549,
+        "longitude": 28.17567
+    },
+    {
+        "EMPID": {
+            "result": 10209,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 10,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Hector, Rivera",
+        "AD1": "134 B LONGANIER",
+        "AD2": "MONTREAL II",
+        "AD3": "COROMANDEL",
+        "latitude": -9.96903,
+        "longitude": -67.84173
+    },
+    {
+        "EMPID": {
+            "result": 10210,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 10,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Charlotte, Ball",
+        "AD1": "YOUNG TOW ROAD",
+        "AD2": "GRAND BOIS",
+        "AD3": "GRAND BOIS",
+        "latitude": 30.26004,
+        "longitude": -91.8167
+    },
+    {
+        "EMPID": {
+            "result": 10211,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 14,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Melanie, Hayes",
+        "AD1": "RAMMA LANE",
+        "AD2": "ST JULIEN D'HOTMAN",
+        "AD3": "ST JULIEN D'HOTMAN",
+        "latitude": -20.23042,
+        "longitude": 57.63833
+    },
+    {
+        "EMPID": {
+            "result": 10212,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 12,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Geraldine, Curry",
+        "AD1": "HIBISCUS LANE",
+        "AD2": "CANOT - BAMBOUS",
+        "AD3": "BAMBOUS",
+        "latitude": -20.22021,
+        "longitude": 57.42894
+    },
+    {
+        "EMPID": {
+            "result": 10213,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 16,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Marion, Luna",
+        "AD1": "TROU AUX BICHES ROAD",
+        "AD2": "TRIOLET",
+        "AD3": "TRIOLET",
+        "latitude": -20.04323,
+        "longitude": 57.55126
+    },
+    {
+        "EMPID": {
+            "result": 10214,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 17,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Eugene, Pearson",
+        "AD1": "20, PRINCESS ALEXANDRA STREET",
+        "AD2": "DUBREUIL",
+        "AD3": "DUBREUIL",
+        "latitude": -20.30071,
+        "longitude": 57.60269
+    },
+    {
+        "EMPID": {
+            "result": 10215,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 17,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Joan, Lamb",
+        "AD1": "TAGORE ROAD",
+        "AD2": "LALLMATIE-FLACQ",
+        "AD3": "LALLMATIE",
+        "latitude": -20.19379,
+        "longitude": 57.67156
+    },
+    {
+        "EMPID": {
+            "result": 10216,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 18,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Frances, Thomas",
+        "AD1": "25,LA CROIX STREET",
+        "AD2": "FOREST SIDE",
+        "AD3": "FOREST SIDE",
+        "latitude": -27.60464,
+        "longitude": 152.02385
+    },
+    {
+        "EMPID": {
+            "result": 10217,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 7,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Lonnie, Stone",
+        "AD1": "GHORUN LANE",
+        "AD2": "COUVENT DE LORETTE ROAD",
+        "AD3": "CUREPIPE",
+        "latitude": -20.29875,
+        "longitude": 57.48906
+    },
+    {
+        "EMPID": {
+            "result": 10218,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 18,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Marilyn, Harvey",
+        "AD1": "7, VEL GOVINDEN STREET",
+        "AD2": "BEAU BASSIN",
+        "AD3": "BEAU BASSIN",
+        "latitude": -20.22354,
+        "longitude": 57.46758
+    },
+    {
+        "EMPID": {
+            "result": 10219,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 15,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Marjorie, Green",
+        "AD1": "3 Rues Des Marguerites",
+        "AD2": "Morc Montreal",
+        "AD3": "COROMANDEL",
+        "latitude": 45.60681,
+        "longitude": -73.6249
+    },
+    {
+        "EMPID": {
+            "result": 10220,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 20,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Wanda, Hardy",
+        "AD1": "SEECHURN LANE",
+        "AD2": "LES MARIANNES - LONG MOUNTAIN",
+        "AD3": "LES MARIANNES",
+        "latitude": -20.16248,
+        "longitude": 57.58987
+    },
+    {
+        "EMPID": {
+            "result": 10221,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 13,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Jack, Armstrong",
+        "AD1": "ROYAL ROAD",
+        "AD2": "MIDLANDS",
+        "AD3": "MIDLANDS",
+        "latitude": 52.56105,
+        "longitude": -1.81706
+    },
+    {
+        "EMPID": {
+            "result": 10222,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 3,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Annette, Sanders",
+        "AD1": "JUMBO ROAD",
+        "AD2": "CHEMIN GRENIER",
+        "AD3": "CHEMIN GRENIER",
+        "latitude": -20.49186,
+        "longitude": 57.47716
+    },
+    {
+        "EMPID": {
+            "result": 10223,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 1,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Leroy, Ward",
+        "AD1": "ATLAS ROAD",
+        "AD2": "GOODLANDS",
+        "AD3": "GOODLANDS",
+        "latitude": -30.09116,
+        "longitude": 117.16561
+    },
+    {
+        "EMPID": {
+            "result": 10224,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 15,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Hazel, Horton",
+        "AD1": "INDIRA GANDHI ROAD",
+        "AD2": "PETIT RAFFRAY",
+        "AD3": "PETIT RAFFRAY",
+        "latitude": -20.0179,
+        "longitude": 57.62651
+    },
+    {
+        "EMPID": {
+            "result": 10225,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 11,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Max, Carr",
+        "AD1": "72, BOULEVARD VICTORIA",
+        "AD2": "PORT LOUIS",
+        "AD3": "PORT LOUIS",
+        "latitude": -20.16832,
+        "longitude": 57.51465
+    },
+    {
+        "EMPID": {
+            "result": 10226,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 18,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Karl, Glover",
+        "AD1": "AVENUE PETITE MARIE",
+        "AD2": "FLIC EN FLAC",
+        "AD3": "FLIC EN FLAC",
+        "latitude": -20.27865,
+        "longitude": 57.37215
+    },
+    {
+        "EMPID": {
+            "result": 10227,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 13,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Jessie, Walton",
+        "AD1": "AVENUE JOSEPH VICTOIRE",
+        "AD2": "BEL AIR RIVIERE SECHE",
+        "AD3": "BEL AIR RIVIERE SECHE",
+        "latitude": -20.26013,
+        "longitude": 57.75047
+    },
+    {
+        "EMPID": {
+            "result": 10228,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 14,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Mathew, Walsh",
+        "AD1": "ROYAL ROAD",
+        "AD2": "5 ARPENTS - PHOENIX",
+        "AD3": "5 ARPENTS",
+        "latitude": 46.22073,
+        "longitude": -64.35597
+    },
+    {
+        "EMPID": {
+            "result": 10229,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 8,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Rhonda, Klein",
+        "AD1": "MORCELLEMENT COUACAUD LANE",
+        "AD2": "CUREPIPE",
+        "AD3": "CUREPIPE",
+        "latitude": -20.31357,
+        "longitude": 57.50007
+    },
+    {
+        "EMPID": {
+            "result": 10230,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 10,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Gwen, Wise",
+        "AD1": "7B, ABBE MAZUY STREET",
+        "AD2": "BEAU BASSIN",
+        "AD3": "BEAU BASSIN",
+        "latitude": -20.23396,
+        "longitude": 57.46817
+    },
+    {
+        "EMPID": {
+            "result": 10231,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 14,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Beatrice, Becker",
+        "AD1": "PETIT VERGER",
+        "AD2": "SAINT PIERRE",
+        "AD3": "SAINT PIERRE",
+        "latitude": -20.21855,
+        "longitude": 57.52606
+    },
+    {
+        "EMPID": {
+            "result": 10232,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 11,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Willie, Ramos",
+        "AD1": "ROYAL ROAD",
+        "AD2": "MEDINE",
+        "AD3": "CAMP DE MASQUE",
+        "latitude": -20.24254,
+        "longitude": 57.63549
+    },
+    {
+        "EMPID": {
+            "result": 10233,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 2,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Jeanette, Graham",
+        "AD1": "RAMPARSAD LANE",
+        "AD2": "LAVENTURE",
+        "AD3": "LAVENTURE",
+        "latitude": -20.14769,
+        "longitude": 57.68644
+    },
+    {
+        "EMPID": {
+            "result": 10234,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 8,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Kristin, Elliott",
+        "AD1": "LA CLEMANCE",
+        "AD2": "RIVIERE DU REMPART",
+        "AD3": "RIVIERE DU REMPART",
+        "latitude": -20.10848,
+        "longitude": 57.69236
+    },
+    {
+        "EMPID": {
+            "result": 10235,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 1,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Jerome, Clark",
+        "AD1": "LOT NO 3 LOTUS LANE",
+        "AD2": "BERNARDIN DE ST PIERRE",
+        "AD3": "VALLEE DES PRETRES",
+        "latitude": -20.16982,
+        "longitude": 57.5377
+    },
+    {
+        "EMPID": {
+            "result": 10236,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 4,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Courtney, Rowe",
+        "AD1": "ROYAL ROAD",
+        "AD2": "ROYAL ROAD - GRAND SABLES",
+        "AD3": "GRAND SABLES",
+        "latitude": 37.85844,
+        "longitude": -82.07256
+    },
+    {
+        "EMPID": {
+            "result": 10237,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 5,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Lester, Johnston",
+        "AD1": "22 COSSIGNY STREET",
+        "AD2": "CUREPIPE ROAD",
+        "AD3": "CUREPIPE",
+        "latitude": -20.3144,
+        "longitude": 57.52338
+    },
+    {
+        "EMPID": {
+            "result": 10238,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 8,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Oliver, Zimmerman",
+        "AD1": "225, OLLIER AVENUE",
+        "AD2": "QUATRE BORNES",
+        "AD3": "QUATRE BORNES",
+        "latitude": 45.09226,
+        "longitude": 0.47112
+    },
+    {
+        "EMPID": {
+            "result": 10239,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 15,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Edna, Patrick",
+        "AD1": "MONTAGNE CHATTE ROAD",
+        "AD2": "POSTE DE FLACQ",
+        "AD3": "POSTE DE FLACQ",
+        "latitude": -20.16911,
+        "longitude": 57.73195
+    },
+    {
+        "EMPID": {
+            "result": 10240,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 1,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Lauren, Stephens",
+        "AD1": "MORC DES GERSIGNY",
+        "AD2": "CENTRAL FLACQ",
+        "AD3": "CENTRAL FLACQ",
+        "latitude": -20.14949,
+        "longitude": 57.51689
+    },
+    {
+        "EMPID": {
+            "result": 10241,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 17,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Fred, Woods",
+        "AD1": "SAWMILL ROAD",
+        "AD2": "CHAMOUNY",
+        "AD3": "CHAMOUNY",
+        "latitude": -20.48187,
+        "longitude": 57.48011
+    },
+    {
+        "EMPID": {
+            "result": 10242,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 13,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Lynda, Grant",
+        "AD1": "E39 AVE L'ESPERANCE",
+        "AD2": "RESIDENCE KENNEDY",
+        "AD3": "QUATRE BORNES",
+        "latitude": 47.06552,
+        "longitude": 4.5529
+    },
+    {
+        "EMPID": {
+            "result": 10243,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 13,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Eileen, Neal",
+        "AD1": "MGR LEEN",
+        "AD2": "QUATRE BORNES",
+        "AD3": "QUATRE BORNES",
+        "latitude": -20.2658,
+        "longitude": 57.47911
+    },
+    {
+        "EMPID": {
+            "result": 10244,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 12,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Oscar, Rodriquez",
+        "AD1": "28, GHOORUN LANE",
+        "AD2": "RUE COUVENT DE LORETTE",
+        "AD3": "CUREPIPE"
+    },
+    {
+        "EMPID": {
+            "result": 10245,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 15,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Stella, Zimmerman",
+        "AD1": "28, BOULEVARD PITOT STREET",
+        "AD2": "VALLEY PITOT",
+        "AD3": "PORT LOUIS",
+        "latitude": -20.16691,
+        "longitude": 57.51949
+    },
+    {
+        "EMPID": {
+            "result": 10246,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 20,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Carmen, Anderson",
+        "AD1": "45, WEST LANE",
+        "AD2": "FLOREAL",
+        "AD3": "FLOREAL",
+        "latitude": 39.21986,
+        "longitude": -77.80361
+    },
+    {
+        "EMPID": {
+            "result": 10247,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 9,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Allison, Johnston",
+        "AD1": "SEECHURN LANE",
+        "AD2": "LES MARIANNES - LONG MOUNTAIN",
+        "AD3": "LES MARIANNES",
+        "latitude": -20.16248,
+        "longitude": 57.58987
+    },
+    {
+        "EMPID": {
+            "result": 10248,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 16,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Theresa, Mason",
+        "AD1": "COONEE ROAD",
+        "AD2": "REUNION MAUREL",
+        "AD3": "REUNION MAUREL",
+        "latitude": -21.21148,
+        "longitude": 55.3523
+    },
+    {
+        "EMPID": {
+            "result": 10249,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 14,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Salvador, Lynch",
+        "AD1": "Ramlagun Moosun School Road,",
+        "AD2": "Bois Rouge",
+        "AD3": "Goodlands",
+        "latitude": -20.03744,
+        "longitude": 57.64139
+    },
+    {
+        "EMPID": {
+            "result": 10250,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 2,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Audrey, Fox",
+        "AD1": "ROYAL ROAD,",
+        "AD2": "OLD GRAND PORT",
+        "AD3": "OLD GRAND PORT",
+        "latitude": -20.37148,
+        "longitude": 57.71419
+    },
+    {
+        "EMPID": {
+            "result": 10251,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 10,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Phillip, McBride",
+        "AD1": "TAGORE LANE",
+        "AD2": "MARE D`ALBERT",
+        "AD3": "MARE D`ALBERT",
+        "latitude": -20.42361,
+        "longitude": 57.63195
+    },
+    {
+        "EMPID": {
+            "result": 10252,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 19,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Maureen, Obrien",
+        "AD1": "SEWRAZ ROAD",
+        "AD2": "9TH MILE",
+        "AD3": "TRIOLET",
+        "latitude": -20.04875,
+        "longitude": 57.55104
+    },
+    {
+        "EMPID": {
+            "result": 10253,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 4,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Kristen, Curtis",
+        "AD1": "NARAD ROAD",
+        "AD2": "PETIT RAFFRAY",
+        "AD3": "PETIT RAFFRAY",
+        "latitude": -20.01636,
+        "longitude": 57.62428
+    },
+    {
+        "EMPID": {
+            "result": 10254,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 3,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Billie, Warner",
+        "AD1": "BERNICA LANE",
+        "AD2": "GLEN PARK - VACOAS",
+        "AD3": "GLEN PARK",
+        "latitude": 44.56193,
+        "longitude": -78.08781
+    },
+    {
+        "EMPID": {
+            "result": 10255,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 19,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Cecil, Houston",
+        "AD1": "ROYAL ROAD",
+        "AD2": "CAROLINE-BEL AIR RIVIERE SECHE",
+        "AD3": "CAROLINE",
+        "latitude": -20.26242,
+        "longitude": 57.74659
+    },
+    {
+        "EMPID": {
+            "result": 10256,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 5,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Albert, Greene",
+        "AD1": "RIVER SIDE ROAD",
+        "AD2": "PHOENIX",
+        "AD3": "PHOENIX",
+        "latitude": 37.65558,
+        "longitude": -78.89388
+    },
+    {
+        "EMPID": {
+            "result": 10257,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 15,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Wendy, Harrison",
+        "AD1": "8 BEYTS STREET",
+        "AD2": "BEAU BASSIN",
+        "AD3": "BEAU BASSIN",
+        "latitude": -20.22253,
+        "longitude": 57.47219
+    },
+    {
+        "EMPID": {
+            "result": 10258,
+            "sharedFormula": "A195"
+        },
+        "TeamID": {
+            "result": 16,
+            "sharedFormula": "B195"
+        },
+        "EMPNAME": "Ryan, Carr",
+        "AD1": "JUGGOO LANE",
+        "AD2": "MARE TABAC",
+        "AD3": "MARE TABAC",
+        "latitude": -20.44278,
+        "longitude": 57.59425
+    },
+    {
+        "EMPID": {
+            "formula": "ROW()+10000",
+            "result": 10259,
+            "ref": "A259:A322",
+            "shareType": "shared"
+        },
+        "TeamID": {
+            "formula": "RANDBETWEEN(1, 20)",
+            "result": 16,
+            "ref": "B259:B322",
+            "shareType": "shared"
+        },
+        "EMPNAME": "Seth, Reed",
+        "AD1": "BEDDING FELD STREET,",
+        "AD2": "PAMPLEMOUSSES",
+        "AD3": "PAMPLEMOUSSES",
+        "latitude": -20.10547,
+        "longitude": 57.57711
+    },
+    {
+        "EMPID": {
+            "result": 10260,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 18,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Dawn, McKinney",
+        "AD1": "44, CORDERIE STREET",
+        "AD2": "PORT LOUIS",
+        "AD3": "PORT LOUIS",
+        "latitude": -20.16113,
+        "longitude": 57.50416
+    },
+    {
+        "EMPID": {
+            "result": 10261,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 12,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Dana, Ortiz",
+        "AD1": "GARDEN STREET",
+        "AD2": "POSTE DE FLACQ",
+        "AD3": "FLACQ",
+        "latitude": -20.16559,
+        "longitude": 57.73668
+    },
+    {
+        "EMPID": {
+            "result": 10262,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 9,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Roxanne, Marsh",
+        "AD1": "BENITIER STREET",
+        "AD2": "RIVIERE DES GALETS",
+        "AD3": "CHEMIN GRENIER",
+        "latitude": -20.50492,
+        "longitude": 57.45655
+    },
+    {
+        "EMPID": {
+            "result": 10263,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 1,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Mike, Austin",
+        "AD1": "SHRIMATEE INDIRA GANDHI LANE,",
+        "AD2": "PAILLES",
+        "AD3": "PAILLES",
+        "latitude": 22.57885,
+        "longitude": 88.35987
+    },
+    {
+        "EMPID": {
+            "result": 10264,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 1,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Clifton, Hoffman",
+        "AD1": "PALMA ROAD",
+        "AD2": "GANGAMAH AVENUE",
+        "AD3": "QUATRE BORNES",
+        "latitude": -20.28463,
+        "longitude": 57.44655
+    },
+    {
+        "EMPID": {
+            "result": 10265,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 10,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Glenn, Moran",
+        "AD1": "11, AVENUE DE LA FAYE",
+        "AD2": "BELLE ROSE",
+        "AD3": "QUATRE BORNES",
+        "latitude": 44.81131,
+        "longitude": -0.55018
+    },
+    {
+        "EMPID": {
+            "result": 10266,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 15,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Guy, Rogers",
+        "AD1": "INDEENARAIN ROAD",
+        "AD2": "ST FRANCOIS CAP MALHEUREUX",
+        "AD3": "CAP MALHEUREUX",
+        "latitude": -20.005,
+        "longitude": 57.63854
+    },
+    {
+        "EMPID": {
+            "result": 10267,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 7,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Marianne, Townsend",
+        "AD1": "DES COINS ROAD",
+        "AD2": "LONG MOUNTAIN",
+        "AD3": "LONG MOUNTAIN",
+        "latitude": 30.55128,
+        "longitude": -98.40355
+    },
+    {
+        "EMPID": {
+            "result": 10268,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 12,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Pat, Hogan",
+        "AD1": "MISSION CROSS ROAD",
+        "AD2": "LALLMATIE",
+        "AD3": "LALLMATIE",
+        "latitude": -20.18208,
+        "longitude": 57.67012
+    },
+    {
+        "EMPID": {
+            "result": 10269,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 19,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Marie, Logan",
+        "AD1": "KULPOO LANE",
+        "AD2": "ROSE BELLE",
+        "AD3": "GRAND PORT",
+        "latitude": -20.39983,
+        "longitude": 57.60203
+    },
+    {
+        "EMPID": {
+            "result": 10270,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 19,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Sue, Lyons",
+        "AD1": "125, MORCELLEMENT VRS",
+        "AD2": "BRITANNIA",
+        "AD3": "BRITANNIA",
+        "latitude": 51.47635,
+        "longitude": 0.18198
+    },
+    {
+        "EMPID": {
+            "result": 10271,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 20,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Kristine, Glover",
+        "AD1": "CRESSONVILLE POULTRY FARM",
+        "AD2": "BEAUX SONGES",
+        "AD3": "BAMBOUS"
+    },
+    {
+        "EMPID": {
+            "result": 10272,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 3,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Rita, Ruiz",
+        "AD1": "307,MORC GRIS-GRIS",
+        "AD2": "SOUILLAC",
+        "AD3": "SOUILLAC"
+    },
+    {
+        "EMPID": {
+            "result": 10273,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 9,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Andrea, Adkins",
+        "AD1": "KALIMAYE ROAD",
+        "AD2": "DAGOTIERE",
+        "AD3": "DAGOTIERE",
+        "latitude": -20.24693,
+        "longitude": 57.56064
+    },
+    {
+        "EMPID": {
+            "result": 10274,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 20,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Terry, Gray",
+        "AD1": "ABBE DE LA CALLE",
+        "AD2": "CUREPIPE ROAD",
+        "AD3": "CUREPIPE",
+        "latitude": -20.31212,
+        "longitude": 57.52696
+    },
+    {
+        "EMPID": {
+            "result": 10275,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 9,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Nelson, Hardy",
+        "AD1": "GROS CAILLOUX",
+        "AD2": "BOSQUET ROAD",
+        "AD3": "PETITE RIVIERE",
+        "latitude": -20.20733,
+        "longitude": 57.44157
+    },
+    {
+        "EMPID": {
+            "result": 10276,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 8,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Monica, Frazier",
+        "AD1": "RIVIER SIDE",
+        "AD2": "PHOENIX",
+        "AD3": "PHOENIX",
+        "latitude": 33.95913,
+        "longitude": -112.13163
+    },
+    {
+        "EMPID": {
+            "result": 10277,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 6,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Edwin, Kelley",
+        "AD1": "ROYAL ROAD",
+        "AD2": "RIVIERE DES ANGUILLES",
+        "AD3": "",
+        "latitude": -20.5024,
+        "longitude": 57.57277
+    },
+    {
+        "EMPID": {
+            "result": 10278,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 2,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Herman, Barrett",
+        "AD1": "31, TECOMA STREET",
+        "AD2": "MORCELLEMENT REY",
+        "AD3": "POINTE AUX SABLES",
+        "latitude": -20.18314,
+        "longitude": 57.43859
+    },
+    {
+        "EMPID": {
+            "result": 10279,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 11,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Leslie, Mann",
+        "AD1": "ROYAL ROAD",
+        "AD2": "ALBION",
+        "AD3": "ALBION",
+        "latitude": 51.13857,
+        "longitude": 0.27113
+    },
+    {
+        "EMPID": {
+            "result": 10280,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 16,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Derrick, Fox",
+        "AD1": "TINTAMARE, PONT COLVILLE",
+        "AD2": "NOUVELLE FRANCE",
+        "AD3": "NOUVELLE FRANCE",
+        "latitude": -20.38471,
+        "longitude": 57.56614
+    },
+    {
+        "EMPID": {
+            "result": 10281,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 3,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Carole, Bates",
+        "AD1": "16, AVENUE ROLAND MAUREL",
+        "AD2": "MORCELLEMENT LE ROCK",
+        "AD3": "PAILLES",
+        "latitude": 47.96355,
+        "longitude": 0.20622
+    },
+    {
+        "EMPID": {
+            "result": 10282,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 7,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Glenn, Swanson",
+        "AD1": "MORCELLEMENT FLEURIOT",
+        "AD2": "SOLFERINO - VACOAS",
+        "AD3": "BONNE TERRE",
+        "latitude": -20.2902,
+        "longitude": 57.48441
+    },
+    {
+        "EMPID": {
+            "result": 10283,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 1,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Kurt, Norton",
+        "AD1": "RUE DES LIMITES",
+        "AD2": "VILLE - NOIRE",
+        "AD3": "MAHEBOURG",
+        "latitude": -20.40428,
+        "longitude": 57.70197
+    },
+    {
+        "EMPID": {
+            "result": 10284,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 13,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Don, Cobb",
+        "AD1": "ROYAL ROAD",
+        "AD2": "CAROLINE",
+        "AD3": "BEL AIR",
+        "latitude": 35.31242,
+        "longitude": -83.15771
+    },
+    {
+        "EMPID": {
+            "result": 10285,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 15,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Patsy, Gross",
+        "AD1": "CAMP DE MASQUE ROAD",
+        "AD2": "MELROSE",
+        "AD3": "MELROSE",
+        "latitude": -20.23535,
+        "longitude": 57.68041
+    },
+    {
+        "EMPID": {
+            "result": 10286,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 15,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Molly, Kelley",
+        "AD1": "FELICO LANE",
+        "AD2": "PALMA",
+        "AD3": "QUATRE BORNES",
+        "latitude": -20.27907,
+        "longitude": 57.46012
+    },
+    {
+        "EMPID": {
+            "result": 10287,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 19,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Myra, Thompson",
+        "AD1": "ROYAL ROAD",
+        "AD2": "MAHEBOURG",
+        "AD3": "MAHEBOURG",
+        "latitude": -20.36625,
+        "longitude": 57.70379
+    },
+    {
+        "EMPID": {
+            "result": 10288,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 4,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Floyd, Jordan",
+        "AD1": "AMEERALLY LANE",
+        "AD2": "MESNIL",
+        "AD3": "PHOENIX",
+        "latitude": -20.2905,
+        "longitude": 57.51279
+    },
+    {
+        "EMPID": {
+            "result": 10289,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 11,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Jenny, Duncan",
+        "AD1": "5, SSR ELIZABETH VILLE",
+        "AD2": "BAIE DU TOMBEAU",
+        "AD3": "BAIE DU TOMBEAU",
+        "latitude": -20.13128,
+        "longitude": 57.50393
+    },
+    {
+        "EMPID": {
+            "result": 10290,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 18,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Tom, Leonard",
+        "AD1": "FLAMINGO ROAD",
+        "AD2": "ALBION",
+        "AD3": "ALBION",
+        "latitude": -20.20825,
+        "longitude": 57.41522
+    },
+    {
+        "EMPID": {
+            "result": 10291,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 12,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Jerome, McKinney",
+        "AD1": "LORETTO CONVENT STREET",
+        "AD2": "CUREPIPE",
+        "AD3": "CUREPIPE",
+        "latitude": -20.30973,
+        "longitude": 57.52713
+    },
+    {
+        "EMPID": {
+            "result": 10292,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 6,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Minnie, Garner",
+        "AD1": "94A. ALBERT DARUTY DE GRAND PR",
+        "AD2": "CUREPIPE ROAD",
+        "AD3": "CUREPIPE",
+        "latitude": 55.14321,
+        "longitude": -118.82504
+    },
+    {
+        "EMPID": {
+            "result": 10293,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 9,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Alex, Adams",
+        "AD1": "12, CANDOS LANE",
+        "AD2": "QUATRE BORNES",
+        "AD3": "QUATRE BORNES",
+        "latitude": -20.27336,
+        "longitude": 57.47761
+    },
+    {
+        "EMPID": {
+            "result": 10294,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 8,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Kelly, Allen",
+        "AD1": "Avenue Dahlia",
+        "AD2": "Britannia",
+        "AD3": "Britannia",
+        "latitude": 43.2441,
+        "longitude": -79.79917
+    },
+    {
+        "EMPID": {
+            "result": 10295,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 11,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Kristina, Curry",
+        "AD1": "BOIS CHERI ROAD",
+        "AD2": "MOKA",
+        "AD3": "MOKA",
+        "latitude": -20.21937,
+        "longitude": 57.50923
+    },
+    {
+        "EMPID": {
+            "result": 10296,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 10,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Janice, Williams",
+        "AD1": "NO. 5 SOLFERINO",
+        "AD2": "VACOAS",
+        "AD3": "VACOAS",
+        "latitude": -20.29299,
+        "longitude": 57.48041
+    },
+    {
+        "EMPID": {
+            "result": 10297,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 7,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Shaun, Craig",
+        "AD1": "DESVEAUX LANE,",
+        "AD2": "LES CASERNES",
+        "AD3": "CUREPIPE",
+        "latitude": -20.30361,
+        "longitude": 57.52898
+    },
+    {
+        "EMPID": {
+            "result": 10298,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 17,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Billie, Franklin",
+        "AD1": "ROUTE PARISOT",
+        "AD2": "MESNIL",
+        "AD3": "CAMP FOUQUEREAUX",
+        "latitude": 44.26449,
+        "longitude": 1.85329
+    },
+    {
+        "EMPID": {
+            "result": 10299,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 19,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Steve, Johnson",
+        "AD1": "26, ROUTE BASSIN",
+        "AD2": "QUATRE BORNES",
+        "AD3": "QUATRE BORNES",
+        "latitude": 47.45591,
+        "longitude": 7.14264
+    },
+    {
+        "EMPID": {
+            "result": 10300,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 14,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Elaine, Green",
+        "AD1": "41, AVE DES ORCHIDEES",
+        "AD2": "SODNAC - QUATRE BORNES",
+        "AD3": "SODNAC",
+        "latitude": -20.267,
+        "longitude": 57.48707
+    },
+    {
+        "EMPID": {
+            "result": 10301,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 19,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Dean, Barber",
+        "AD1": "ROYAL ROAD",
+        "AD2": "MARE D'ALBERT",
+        "AD3": "MARE D'ALBERT",
+        "latitude": 41.71618,
+        "longitude": 2.9332
+    },
+    {
+        "EMPID": {
+            "result": 10302,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 15,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Mattie, Haynes",
+        "AD1": "18, DAUBIN STREET",
+        "AD2": "VALLEE DES PRETES",
+        "AD3": "PORT LOUIS",
+        "latitude": -20.22251,
+        "longitude": 57.4684
+    },
+    {
+        "EMPID": {
+            "result": 10303,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 1,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Claude, Hopkins",
+        "AD1": "10, Cité Laval Street",
+        "AD2": "PORT LOUIS",
+        "AD3": "PORT LOUIS",
+        "latitude": -20.15619,
+        "longitude": 57.5156
+    },
+    {
+        "EMPID": {
+            "result": 10304,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 1,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Maurice, Richards",
+        "AD1": "LOT NO. 557",
+        "AD2": "MORC LES RESIDENCES PINEWOOD",
+        "AD3": "WOOTON CAMP FOUQUEREAUX",
+        "latitude": 16.2565,
+        "longitude": -61.57515
+    },
+    {
+        "EMPID": {
+            "result": 10305,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 11,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Margie, Freeman",
+        "AD1": "RAMNATH MANDIR AVENUE,",
+        "AD2": "SCHEONFIELD ROAD,",
+        "AD3": "RIVIERE DU REMPART",
+        "latitude": -20.10048,
+        "longitude": 57.68363
+    },
+    {
+        "EMPID": {
+            "result": 10306,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 4,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Peggy, Hall",
+        "AD1": "30, AVENUE DES BOIS NOIRS",
+        "AD2": "MORCELLEMENT REUNION",
+        "AD3": "FLOREAL",
+        "latitude": -20.88095,
+        "longitude": 55.44205
+    },
+    {
+        "EMPID": {
+            "result": 10307,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 2,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Jane, Frank",
+        "AD1": "ROYAL ROAD, BRISEE VERDIERE",
+        "AD2": "BON ACCUEIL/FLACQ",
+        "AD3": "BON ACCUEIL/FLACQ",
+        "latitude": -20.18508,
+        "longitude": 57.64265
+    },
+    {
+        "EMPID": {
+            "result": 10308,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 11,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Mathew, Steele",
+        "AD1": "ALLEE PITOT",
+        "AD2": "MOUNT ORY",
+        "AD3": "MOKA",
+        "latitude": -20.21795,
+        "longitude": 57.48933
+    },
+    {
+        "EMPID": {
+            "result": 10309,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 1,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Ruth, Floyd",
+        "AD1": "ARYA SAMAJ LANE, GROS BILLOT",
+        "AD2": "NEW GROVE",
+        "AD3": "NEW GROVE",
+        "latitude": 40.85306,
+        "longitude": -73.11499
+    },
+    {
+        "EMPID": {
+            "result": 10310,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 3,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Jimmie, Thornton",
+        "AD1": "LE HOCHET",
+        "AD2": "TERRE ROUGE",
+        "AD3": "TERRE ROUGE",
+        "latitude": -20.13348,
+        "longitude": 57.51835
+    },
+    {
+        "EMPID": {
+            "result": 10311,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 2,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Jill, Welch",
+        "AD1": "82, NHDC",
+        "AD2": "UPPER DAGOTIERE",
+        "AD3": "DAGOTIERE",
+        "latitude": -20.24163,
+        "longitude": 57.56695
+    },
+    {
+        "EMPID": {
+            "result": 10312,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 1,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Raul, James",
+        "AD1": "TOORY ROAD",
+        "AD2": "BON ACCUEIL",
+        "AD3": "BON ACCUEIL",
+        "latitude": -20.17271,
+        "longitude": 57.66865
+    },
+    {
+        "EMPID": {
+            "result": 10313,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 18,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Diana, Clarke",
+        "AD1": "3, CLAIRFONDS",
+        "AD2": "VACOAS",
+        "AD3": "VACOAS",
+        "latitude": -20.29505,
+        "longitude": 57.48437
+    },
+    {
+        "EMPID": {
+            "result": 10314,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 9,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Marcia, Bryant",
+        "AD1": "ENGRAIS CATHAN STREET",
+        "AD2": "EAU COULEE",
+        "AD3": "CUREPIPE",
+        "latitude": -20.30041,
+        "longitude": 57.5257
+    },
+    {
+        "EMPID": {
+            "result": 10315,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 20,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Esther, Logan",
+        "AD1": "ROYAL ROAD",
+        "AD2": "PAMPLEMOUSSES",
+        "AD3": "PAMPLEMOUSSES",
+        "latitude": -20.09114,
+        "longitude": 57.53007
+    },
+    {
+        "EMPID": {
+            "result": 10316,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 15,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Marc, Pittman",
+        "AD1": "ROYAL ROAD",
+        "AD2": "LA SOURDINE - L'ESCALIER",
+        "AD3": "L`ESCALIER",
+        "latitude": -20.48796,
+        "longitude": 57.6153
+    },
+    {
+        "EMPID": {
+            "result": 10317,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 20,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Jack, Hanson",
+        "AD1": "ST ANNE ROAD",
+        "AD2": "STANLEY",
+        "AD3": "ROSE HILL",
+        "latitude": -20.24767,
+        "longitude": 57.46416
+    },
+    {
+        "EMPID": {
+            "result": 10318,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 16,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Shannon, Pearson",
+        "AD1": "SIR HESKETH",
+        "AD2": "BELL AVENUE",
+        "AD3": "FLOREAL",
+        "latitude": 50.66244,
+        "longitude": 5.66206
+    },
+    {
+        "EMPID": {
+            "result": 10319,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 7,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Marsha, Lawson",
+        "AD1": "10 AVENUE DES AIGLES",
+        "AD2": "SODNAC",
+        "AD3": "QUATRE BORNES",
+        "latitude": -20.27095,
+        "longitude": 57.48862
+    },
+    {
+        "EMPID": {
+            "result": 10320,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 1,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Wilma, Norman",
+        "AD1": "2 BIS, BLONDEAU STREET",
+        "AD2": "ROSE HILL",
+        "AD3": "ROSE HILL",
+        "latitude": 38.63462,
+        "longitude": -94.10206
+    },
+    {
+        "EMPID": {
+            "result": 10321,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 19,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Pauline, Cooper",
+        "AD1": "PETIT CAMP",
+        "AD2": "PHOENIX",
+        "AD3": "PETIT CAMP",
+        "latitude": 48.7688,
+        "longitude": -3.42632
+    },
+    {
+        "EMPID": {
+            "result": 10322,
+            "sharedFormula": "A259"
+        },
+        "TeamID": {
+            "result": 12,
+            "sharedFormula": "B259"
+        },
+        "EMPNAME": "Terrance, McCormick",
+        "AD1": "COLONEL YELDHAM ROAD",
+        "AD2": "L'ESPERANCE PITON",
+        "AD3": "L'ESPERANCE PITON",
+        "latitude": -20.09417,
+        "longitude": 57.63592
+    },
+    {
+        "EMPID": {
+            "formula": "ROW()+10000",
+            "result": 10323,
+            "ref": "A323:A371",
+            "shareType": "shared"
+        },
+        "TeamID": {
+            "formula": "RANDBETWEEN(1, 20)",
+            "result": 18,
+            "ref": "B323:B371",
+            "shareType": "shared"
+        },
+        "EMPNAME": "Gladys, Vasquez",
+        "AD1": "175, AVENUE JOHN KENNEDY",
+        "AD2": "VACOAS",
+        "AD3": "VACOAS",
+        "latitude": 46.79485,
+        "longitude": 1.69181
+    },
+    {
+        "EMPID": {
+            "result": 10324,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 6,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Wanda, Pittman",
+        "AD1": "49, SATHIADEV SALABEE",
+        "AD2": "CLAIRFONDS NO 1 - PHOENIX",
+        "AD3": "PHOENIX"
+    },
+    {
+        "EMPID": {
+            "result": 10325,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 19,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Allen, Ellis",
+        "AD1": "347 AVENUE ROSES",
+        "AD2": "MORCELLEMENT MONTREAL",
+        "AD3": "COROMANDEL",
+        "latitude": 45.47974,
+        "longitude": -73.58044
+    },
+    {
+        "EMPID": {
+            "result": 10326,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 1,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Franklin, Bryant",
+        "AD1": "GEBERT ROAD",
+        "AD2": "ROSE BELLE",
+        "AD3": "ROSE BELLE",
+        "latitude": -20.40854,
+        "longitude": 57.6067
+    },
+    {
+        "EMPID": {
+            "result": 10327,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 10,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Lydia, Gutierrez",
+        "AD1": "MATADEEN STREET",
+        "AD2": "RIVIERE DES ANGUILLES",
+        "AD3": "RIVIERE DES ANGUILLES",
+        "latitude": -20.4909,
+        "longitude": 57.55713
+    },
+    {
+        "EMPID": {
+            "result": 10328,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 9,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Wallace, Hopkins",
+        "AD1": "ROYAL ROAD",
+        "AD2": "KESTREL LANE",
+        "AD3": "TERRE ROUGE",
+        "latitude": -20.12758,
+        "longitude": 57.53206
+    },
+    {
+        "EMPID": {
+            "result": 10329,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 18,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Kathryn, Stephens",
+        "AD1": "JOOMUN ROAD",
+        "AD2": "RIVIERE DU REMPART",
+        "AD3": "RIVIERE DU REMPART",
+        "latitude": -20.10276,
+        "longitude": 57.6964
+    },
+    {
+        "EMPID": {
+            "result": 10330,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 10,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Bernard, Sharp",
+        "AD1": "BISWA LANE",
+        "AD2": "PLAINE MAGNIEN",
+        "AD3": "PLAINE MAGNIEN",
+        "latitude": -20.43201,
+        "longitude": 57.66077
+    },
+    {
+        "EMPID": {
+            "result": 10331,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 1,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Katie, Drake",
+        "AD1": "ROYAL ROAD",
+        "AD2": "ROCHE NOIRES",
+        "AD3": "ROCHE NOIRES",
+        "latitude": -20.0979,
+        "longitude": 57.70656
+    },
+    {
+        "EMPID": {
+            "result": 10332,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 16,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Ken, Oliver",
+        "AD1": "SANS SOUCI ROAD",
+        "AD2": "MONTAGNE BLANCHE",
+        "AD3": "MONTAGNE BLANCHE",
+        "latitude": -20.29459,
+        "longitude": 57.6603
+    },
+    {
+        "EMPID": {
+            "result": 10333,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 7,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Gayle, Terry",
+        "AD1": "MISSION CROSS ROAD",
+        "AD2": "LALLMATIE",
+        "AD3": "LALLMATIE",
+        "latitude": -20.18208,
+        "longitude": 57.67012
+    },
+    {
+        "EMPID": {
+            "result": 10334,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 8,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Danny, Norton",
+        "AD1": "17 SPARROW ROAD",
+        "AD2": "POINTE AUX SABLES",
+        "AD3": "POINTE AUX SABLES",
+        "latitude": -20.17059,
+        "longitude": 57.45137
+    },
+    {
+        "EMPID": {
+            "result": 10335,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 16,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Yvonne, Patton",
+        "AD1": "CHANDRA LANE",
+        "AD2": "LA ROSA - NEW GROVE",
+        "AD3": "NEW GROVE",
+        "latitude": -20.41581,
+        "longitude": 57.62188
+    },
+    {
+        "EMPID": {
+            "result": 10336,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 6,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Jenny, Johnston",
+        "AD1": "LA CHAUX STREET",
+        "AD2": "MAHEBOURG",
+        "AD3": "MAHEBOURG",
+        "latitude": -20.41408,
+        "longitude": 57.70726
+    },
+    {
+        "EMPID": {
+            "result": 10337,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 6,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Tiffany, Sims",
+        "AD1": "24 D`EPINAY AVENUE",
+        "AD2": "LANE 3 - QUATRE BORNES",
+        "AD3": "QUATRE BORNES",
+        "latitude": -20.26072,
+        "longitude": 57.47858
+    },
+    {
+        "EMPID": {
+            "result": 10338,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 19,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Malcolm, Black",
+        "AD1": "GEETANJALI ROAD",
+        "AD2": "3 BOUTIQUES TRIOLET",
+        "AD3": "TRIOLET",
+        "latitude": -20.05173,
+        "longitude": 57.55078
+    },
+    {
+        "EMPID": {
+            "result": 10339,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 3,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Kellie, Brady",
+        "AD1": "OLD FLACQ ROAD",
+        "AD2": "KHOYRATTY-D'EPINAY",
+        "AD3": "KHOYRATTY",
+        "latitude": -20.12814,
+        "longitude": 57.5921
+    },
+    {
+        "EMPID": {
+            "result": 10340,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 3,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Guillermo, Moody",
+        "AD1": "AVENUE JOHN KENNEDY",
+        "AD2": "VACOAS",
+        "AD3": "VACOAS",
+        "latitude": -20.30572,
+        "longitude": 57.492
+    },
+    {
+        "EMPID": {
+            "result": 10341,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 4,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Rodney, Greene",
+        "AD1": "RUE HORTENCIA",
+        "AD2": "VERDUN",
+        "AD3": "VERDUN",
+        "latitude": 46.07885,
+        "longitude": -64.8011
+    },
+    {
+        "EMPID": {
+            "result": 10342,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 13,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Ralph, Newton",
+        "AD1": "BABOOLALL STREET",
+        "AD2": "MARE D`ALBERT",
+        "AD3": "MARE D`ALBERT",
+        "latitude": 41.71618,
+        "longitude": 2.9332
+    },
+    {
+        "EMPID": {
+            "result": 10343,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 7,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Crystal, Caldwell",
+        "AD1": "68 LA CROIX STREET",
+        "AD2": "FOREST SIDE - CUREPIPE",
+        "AD3": "FOREST SIDE",
+        "latitude": 38.32621,
+        "longitude": -91.96325
+    },
+    {
+        "EMPID": {
+            "result": 10344,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 4,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Kristina, Francis",
+        "AD1": "ROYAL ROAD",
+        "AD2": "PLAINE DES PAPAYES",
+        "AD3": "PLAINE DES PAPAYES",
+        "latitude": -20.02792,
+        "longitude": 57.5983
+    },
+    {
+        "EMPID": {
+            "result": 10345,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 1,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Jackie, Green",
+        "AD1": "ROYAL ROAD",
+        "AD2": "L'ESPERANCE QUARTIER MILITAIRE",
+        "AD3": "L'ESPERANCE"
+    },
+    {
+        "EMPID": {
+            "result": 10346,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 14,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Kathleen, Hayes",
+        "AD1": "39, AVENUE PIGEOT",
+        "AD2": "PLAISANCE - ROSE HILL",
+        "AD3": "PLAISANCE",
+        "latitude": -37.87872,
+        "longitude": 145.02237
+    },
+    {
+        "EMPID": {
+            "result": 10347,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 12,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Byron, Mann",
+        "AD1": "Lot 41, Morcellement VRS11",
+        "AD2": "L'Avenir",
+        "AD3": "St- Pierre",
+        "latitude": 43.44516,
+        "longitude": 6.64257
+    },
+    {
+        "EMPID": {
+            "result": 10348,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 16,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Jenny, Hudson",
+        "AD1": "ROYAL ROAD",
+        "AD2": "TROU D'EAU DOUCE - FLACQ",
+        "AD3": "TROU D'EAU DOUCE",
+        "latitude": -20.24201,
+        "longitude": 57.78594
+    },
+    {
+        "EMPID": {
+            "result": 10349,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 17,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Marlene, Rose",
+        "AD1": "PETIT CHEMIN",
+        "AD2": "BEL AIR RIVIERE SECHE",
+        "AD3": "BEL AIR RIVIERE SECHE",
+        "latitude": -20.2584,
+        "longitude": 57.75401
+    },
+    {
+        "EMPID": {
+            "result": 10350,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 6,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Rosie, Ruiz",
+        "AD1": "CALLYCHURN LANE",
+        "AD2": "CARREAU LALIANE - VACOAS",
+        "AD3": "VACOAS",
+        "latitude": -20.28482,
+        "longitude": 57.48669
+    },
+    {
+        "EMPID": {
+            "result": 10351,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 12,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Alvin, Lynch",
+        "AD1": "AVENUE PERE DUFFAY",
+        "AD2": "ROCHE BRUNES",
+        "AD3": "PLAISANCE CAMP LEVIEUX",
+        "latitude": -20.23916,
+        "longitude": 57.45695
+    },
+    {
+        "EMPID": {
+            "result": 10352,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 9,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Bobby, Lyons",
+        "AD1": "MAHATMA GANDHI LANE",
+        "AD2": "ST JULIEN D'HOTMAN - FLACQ",
+        "AD3": "ST JULIEN D'HOTMAN",
+        "latitude": -20.23344,
+        "longitude": 57.63602
+    },
+    {
+        "EMPID": {
+            "result": 10353,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 11,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Kay, Smith",
+        "AD1": "GALEA 2 - PARISOT STREET",
+        "AD2": "MESNIL - PHOENIX",
+        "AD3": "MESNIL"
+    },
+    {
+        "EMPID": {
+            "result": 10354,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 5,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Manuel, Rodgers",
+        "AD1": "RICHE MARE",
+        "AD2": "CENTRAL FLACQ",
+        "AD3": "RICHE MARE",
+        "latitude": -20.20216,
+        "longitude": 57.7316
+    },
+    {
+        "EMPID": {
+            "result": 10355,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 2,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Rick, Lyons",
+        "AD1": "9, DR YTHIER AVENUE",
+        "AD2": "BELLE ROSE",
+        "AD3": "BELLE ROSE",
+        "latitude": 41.34335,
+        "longitude": -71.77514
+    },
+    {
+        "EMPID": {
+            "result": 10356,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 6,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Lila, Jordan",
+        "AD1": "29, AVENUE AUTRUCHES",
+        "AD2": "HILCREST - SODNAC",
+        "AD3": "QUATRE-BORNES",
+        "latitude": -20.26795,
+        "longitude": 57.48627
+    },
+    {
+        "EMPID": {
+            "result": 10357,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 8,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Elsie, Buchanan",
+        "AD1": "OLD GRAND PORT ROAD",
+        "AD2": "",
+        "AD3": "QUARTIER MILITAIRE",
+        "latitude": -20.24797,
+        "longitude": 57.59688
+    },
+    {
+        "EMPID": {
+            "result": 10358,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 9,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Jeanette, Neal",
+        "AD1": "NARENDRA LANE",
+        "AD2": "MARE D`ALBERT",
+        "AD3": "MARE D`ALBERT",
+        "latitude": 41.71618,
+        "longitude": 2.9332
+    },
+    {
+        "EMPID": {
+            "result": 10359,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 4,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Joanne, Mullins",
+        "AD1": "SOLFERINO NO. 2",
+        "AD2": "VACOAS",
+        "AD3": "SOLFERINO NO. 2",
+        "latitude": -20.29218,
+        "longitude": 57.47932
+    },
+    {
+        "EMPID": {
+            "result": 10360,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 6,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Marsha, Harrington",
+        "AD1": "RUE DES VERGUES",
+        "AD2": "GLEN PARK - VACOAS",
+        "AD3": "GLEN PARK",
+        "latitude": -20.32906,
+        "longitude": 57.48509
+    },
+    {
+        "EMPID": {
+            "result": 10361,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 1,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Nicholas, Cummings",
+        "AD1": "TEMPLE ROAD",
+        "AD2": "QUARTIER MILITAIRE",
+        "AD3": "",
+        "latitude": -20.25694,
+        "longitude": 57.56412
+    },
+    {
+        "EMPID": {
+            "result": 10362,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 13,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Curtis, Rogers",
+        "AD1": "TRIANGLE ROAD",
+        "AD2": "GOOLDANDS",
+        "AD3": "GOODLANDS",
+        "latitude": -20.0339,
+        "longitude": 57.65783
+    },
+    {
+        "EMPID": {
+            "result": 10363,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 5,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Jimmy, Bell",
+        "AD1": "FOOTBALL GROUND ROAD",
+        "AD2": "CHEMIN GRENIER",
+        "AD3": "CHEMIN GRENIER",
+        "latitude": -20.49123,
+        "longitude": 57.48138
+    },
+    {
+        "EMPID": {
+            "result": 10364,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 10,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Marilyn, Steele",
+        "AD1": "JOOMUN ROAD",
+        "AD2": "RIVIERE DU REMPART",
+        "AD3": "RIVIERE DU REMPART",
+        "latitude": -20.10276,
+        "longitude": 57.6964
+    },
+    {
+        "EMPID": {
+            "result": 10365,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 13,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Ray, Arnold",
+        "AD1": "SHIVALA ROAD",
+        "AD2": "BARAMIA - ROSE BELLE",
+        "AD3": "ROSE BELLE",
+        "latitude": -20.25513,
+        "longitude": 57.72607
+    },
+    {
+        "EMPID": {
+            "result": 10366,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 18,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Dianne, Sullivan",
+        "AD1": "20, ROYAL ROAD",
+        "AD2": "UNION PARK",
+        "AD3": "UNION PARK",
+        "latitude": 55.76839,
+        "longitude": -2.01394
+    },
+    {
+        "EMPID": {
+            "result": 10367,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 10,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Kent, Beck",
+        "AD1": "VILLAGE HALL LANE",
+        "AD2": "LAVENTURE",
+        "AD3": "FLACQ",
+        "latitude": -20.27648,
+        "longitude": 57.36891
+    },
+    {
+        "EMPID": {
+            "result": 10368,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 11,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Lucy, Erickson",
+        "AD1": "SCHOOL LANE",
+        "AD2": "ST JULIEN VILLAGE",
+        "AD3": "ST JULIEN VILLAGE",
+        "latitude": -20.20765,
+        "longitude": 57.6924
+    },
+    {
+        "EMPID": {
+            "result": 10369,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 15,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Karl, Maldonado",
+        "AD1": "KALIMAYE ROAD",
+        "AD2": "PLAINE DES ROCHES",
+        "AD3": "PLAINE DES ROCHES",
+        "latitude": -20.11888,
+        "longitude": 57.69727
+    },
+    {
+        "EMPID": {
+            "result": 10370,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 8,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Nathan, Wheeler",
+        "AD1": "JAGRITI ROAD",
+        "AD2": "7TH MILE - TRIOLET",
+        "AD3": "TRIOLET",
+        "latitude": -20.07502,
+        "longitude": 57.54604
+    },
+    {
+        "EMPID": {
+            "result": 10371,
+            "sharedFormula": "A323"
+        },
+        "TeamID": {
+            "result": 12,
+            "sharedFormula": "B323"
+        },
+        "EMPNAME": "Jean, Perkins",
+        "AD1": "Diligence Street",
+        "AD2": "Morc Promo Holiday",
+        "AD3": "BALACLAVA",
+        "latitude": 53.32563,
+        "longitude": -3.82958
+    }
+]

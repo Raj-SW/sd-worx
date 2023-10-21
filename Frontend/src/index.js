@@ -1,16 +1,44 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import 'azure-maps-control/dist/atlas.min.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter as Router} from 'react-router-dom';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { Home } from './Home/Home';
+import CarPoolingManagement from './CarpoolingManagement/CarPoolingManagement';
+import UserAuthPage from './Pages/UserAuthPage';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "home",
+        element: <Home />,
+      },
+      {
+        path: "car-pooling",
+        element: <CarPoolingManagement />,
+      },
+      {
+        path: "auth",
+        element: <UserAuthPage/>,
+      },
+    ],
+  },
+]);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-     <Router>
-    <App />
-  </Router>
+    <RouterProvider router={router} />
    </React.StrictMode>
 );
 
