@@ -10,7 +10,6 @@ function AvailableDrivers() {
     const [shareCarModalVisible, setShareCarModalVisible] = useState(false);
 
     const [api, contextHolder] = notification.useNotification();
-    console.log(process.env)
       const onChange = async (date, dateString) => {
         const queryParams = {
             auth: {
@@ -27,6 +26,7 @@ function AvailableDrivers() {
                 'Authorization': `Bearer ${YOUR_TOKEN}`
             }
             });
+            console.log(response.data.data)
         setData(response.data.data)
         
         if (response.data.data) {
