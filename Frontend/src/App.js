@@ -8,17 +8,13 @@ import {Community} from './Community/Community.jsx'
 import {Footer} from './Footer/Footer.jsx'
 import {Forms} from './Forms/Forms.jsx'
 import {UserAuthPage} from '../src/Pages/UserAuthPage.jsx'
-
+import {Home} from '../src/Home/Home.jsx'
 function App() {
 
   return (
     <div className="App">
-
-    <NavBar/>
-    {/* <Hero/>
-    <Tabs/>
-    <Community/> */}
-
+      <NavBar/>
+      <Home/>
     </div>
    );
 }
