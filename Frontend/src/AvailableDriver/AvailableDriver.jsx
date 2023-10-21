@@ -92,7 +92,8 @@ function AvailableDrivers() {
                 <List.Item.Meta
                   avatar={<Avatar src={`https://th.bing.com/th/id/OIP.AkKR5-4AJhHTNNDMp0NxvQAAAA?pid=ImgDet&rs=1`} />}
                   title={item.driver.name}
-                  description={<span dangerouslySetInnerHTML={{ __html: `Address: ${item.driver.address} <br>Drive Time on Road: ${item.departure_time} <br> Pickup Time: ` }} />}
+                  description={<span dangerouslySetInnerHTML={{ __html: `Address: ${item.driver.address} <br>Drive Time on Road: ${item.departure_time} <br> Pickup Time: ${item.estimated_pickup_time} <br> Seats Left: ${item.available_seats
+                  }` }} />}
                 />
               </List.Item>
             )}
