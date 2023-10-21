@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import SparkLogo from "../assets/img/01.png";
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export const Forms = () => {
   const [showFirstDiv, setShowFirstDiv] = useState(true);
@@ -130,7 +131,6 @@ const handleSubmit = async (e) => {
                 ) : (
                   <div className="div2">
                     {/* Sign Up form */}
-
                     <form>
                       <h3>Sign Up</h3>
                       <div className="name-container">

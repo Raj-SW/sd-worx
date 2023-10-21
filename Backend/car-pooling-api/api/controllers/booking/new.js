@@ -27,6 +27,8 @@ module.exports = {
                 recordsAdded = await Booking.create({
                     user: req.session.user_id,
                     trip: inputs.data.trip,
+                    status: "accepted"
+
                 }).fetch();
 
                 return exits.success({
