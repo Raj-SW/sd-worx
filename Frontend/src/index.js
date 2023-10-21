@@ -8,7 +8,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { Home } from './Home/Home';
 import CarPoolingManagement from './CarpoolingManagement/CarPoolingManagement';
 import UserAuthPage from './Pages/UserAuthPage';
-
+import CreateTrip from './Pages/UserDashboard';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +31,10 @@ const router = createBrowserRouter([
         path: "auth",
         element: <UserAuthPage/>,
       },
+      {
+        path:"CreateTrip",
+        element: <CreateTrip/>
+      }
     ],
   },
 ]);

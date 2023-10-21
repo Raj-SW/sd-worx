@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Forms.css";
 import { Container, Row, Col } from "react-bootstrap";
 import SparkLogo from "../assets/img/01.png";
+import { Link } from "react-router-dom";
 
 export const Forms = () => {
   const [showFirstDiv, setShowFirstDiv] = useState(true);
@@ -64,7 +65,8 @@ export const Forms = () => {
                       </div>
 
                       <div className="signin-btn">
-                        <button className="vvd">Sign In</button>
+                        <button className="vvd" >Sign In</button>
+                        <p> <Link to="/CreateTrip">Another Page</Link></p>
                       </div>
                       <p>
                         Forgot<a href="">Password?</a>{" "}
@@ -76,7 +78,6 @@ export const Forms = () => {
                 ) : (
                   <div className="div2">
                     {/* Sign Up form */}
-
                     <form>
                       <h3>Sign Up</h3>
                       <div className="name-container">
